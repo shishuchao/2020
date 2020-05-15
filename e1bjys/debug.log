@@ -1,0 +1,3 @@
+[0531/102214.875:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0618/165210.242:ERROR:exception_snapshot_win.cc(87)] thread ID 6684 not found in process
+[0618/165210.242:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed

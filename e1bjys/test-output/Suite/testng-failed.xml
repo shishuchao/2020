@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]" parallel="methods">
+  <parameter name="pass" value="111111"/>
+  <parameter name="username" value="18513199586"/>
+  <listeners>
+    <listener class-name="com.mushishi.selenium.util.RetryListener"/>
+    <listener class-name="com.mushishi.selenium.util.TestNGListenerScreen"/>
+  </listeners>
+  <test name="Test2(failed)" parallel="methods">
+    <classes>
+      <class name="com.mushishi.selenium.testCase.testCourseListPage">
+        <methods>
+          <include name="CourseList"/>
+        </methods>
+      </class> <!-- com.mushishi.selenium.testCase.testCourseListPage -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

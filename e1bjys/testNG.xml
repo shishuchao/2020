@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+	<parameter name ="username" value="18513199586"/>
+	<parameter name ="pass" value="111111"/>
+  <test name="Test1">
+	<listeners>
+        <listener class-name="com.mushishi.selenium.util.RetryListener" />
+        <listener class-name="com.mushishi.selenium.util.TestNGListenerScreen" />
+    </listeners>
+    <classes>
+      <class name="com.mushishi.selenium.testCase.SuiteTestLogin"/>
+      <class name="com.mushishi.selenium.testCase.SuiteTestBuy"/>
+    </classes>
+  </test>
+</suite>
