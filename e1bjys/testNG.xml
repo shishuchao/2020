@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" parallel="false">
-	<parameter name ="username" value="18513199586"/>
-	<parameter name ="pass" value="111111"/>
+	<parameter name ="username" value="13283155237"/>
+	<parameter name ="pass" value="QWER_1234"/>
   <test name="Test1">
 	<listeners>
         <listener class-name="com.mushishi.selenium.util.RetryListener" />

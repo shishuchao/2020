@@ -34,9 +34,9 @@ public class ImoocLogin {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(By.name("email")).sendKeys("18513199586");
-		driver.findElement(By.name("password")).sendKeys("111111");
-		driver.findElement(By.className("btn-red")).click();
+		driver.findElement(By.name("email")).sendKeys("13283155237");
+		driver.findElement(By.name("password")).sendKeys("QWER_1234");
+		driver.findElement(By.className("xa-login")).click();
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
