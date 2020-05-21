@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2706d0d-a9d6-4429-98d6-26a18cbff5df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/seleniumImooc.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ssc/ActionSelenium.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ssc/Temp$GreetingService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ssc/Temp$Java8Tester.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ssc/Temp$MathOperation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ssc/Temp$PlainNioServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ssc/Temp$PlainOioServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ssc/Temp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +148,7 @@
       <workItem from="1589971995173" duration="1958000" />
       <workItem from="1589977060513" duration="5108000" />
       <workItem from="1589989445379" duration="794000" />
-      <workItem from="1590033389219" duration="2951000" />
+      <workItem from="1590033389219" duration="3201000" />
     </task>
     <task id="LOCAL-00001" summary="maven updates something ,&#10;i don't build or create any code">
       <created>1589903312483</created>
@@ -169,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590035683548</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="it looks like committing before pull is needed">
+      <created>1590064550221</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590064550221</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,13 +246,17 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="406" y="206" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1590033391745" />
+    <state x="539" y="320" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590064775681">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="539" y="320" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1590064775681" />
     <state x="536" y="182" key="git4idea.merge.GitMergeDialog" timestamp="1589984472482">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="536" y="182" key="git4idea.merge.GitMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1589984472482" />
-    <state x="453" y="182" key="git4idea.merge.GitPullDialog" timestamp="1590064531089">
+    <state x="453" y="182" key="git4idea.merge.GitPullDialog" timestamp="1590064737945">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="453" y="182" key="git4idea.merge.GitPullDialog/0.0.1536.834@0.0.1536.834" timestamp="1590064531089" />
+    <state x="453" y="182" key="git4idea.merge.GitPullDialog/0.0.1536.834@0.0.1536.834" timestamp="1590064737945" />
   </component>
 </project>
