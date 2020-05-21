@@ -1,50 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2706d0d-a9d6-4429-98d6-26a18cbff5df" name="Default Changelist" comment="didn't code within e1bjys,&#10;code something in Temp,&#10;good action ,commit">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_50_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssc/Temp.java" afterDir="false" />
+    <list default="true" id="d2706d0d-a9d6-4429-98d6-26a18cbff5df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seleniumImooc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumImooc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mushishi/selenium/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mushishi/selenium/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/ActionSelenium.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/ActionSelenium.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/base/DriverBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/base/DriverBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/base/SelectDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/base/SelectDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/business/CourseListPagePro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/business/CourseListPagePro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/business/CoursePagePro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/business/CoursePagePro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/business/HomePagePro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/business/HomePagePro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/business/LoginPro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/business/LoginPro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/business/OrderPayPagePro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/business/OrderPayPagePro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/business/SureOrderPagePro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/business/SureOrderPagePro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/handle/CourseListPageHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/handle/CourseListPageHandle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/handle/CoursePageHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/handle/CoursePageHandle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/handle/HomePageHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/handle/HomePageHandle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/handle/OrderPayPageHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/handle/OrderPayPageHandle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/handle/SureOrderHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/handle/SureOrderHandle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/handle/loginPageHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/handle/loginPageHandle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/page/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/page/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/page/CourseListPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/page/CourseListPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/page/CoursePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/page/CoursePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/page/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/page/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/page/SureOrderPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/page/SureOrderPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/page/loginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/page/loginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/page/orderPayPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/page/orderPayPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/CaseBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/CaseBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/ImoocLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/ImoocLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/SuiteTestBuy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/SuiteTestBuy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/SuiteTestLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/SuiteTestLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/testCourseListPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/testCourseListPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/testLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/testLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/testngTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/testCase/testngTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/util/HandleCookie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/util/HandleCookie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/util/ProUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/util/ProUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/util/RetryListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/util/RetryListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/util/SendEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/util/SendEmail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/util/TestNGListenerScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/util/TestNGListenerScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/util/TestngRetry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/util/TestngRetry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/util/getByLocator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mushishi/selenium/util/getByLocator.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +124,7 @@
       <workItem from="1589902431033" duration="908000" />
       <workItem from="1589971995173" duration="1958000" />
       <workItem from="1589977060513" duration="5108000" />
-      <workItem from="1589989445379" duration="334000" />
+      <workItem from="1589989445379" duration="794000" />
     </task>
     <task id="LOCAL-00001" summary="maven updates something ,&#10;i don't build or create any code">
       <created>1589903312483</created>
@@ -175,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589903312483</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="didn't code within e1bjys,&#10;code something in Temp,&#10;good action ,commit">
+      <created>1589989822280</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589989822280</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,10 +152,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="didn't code within e1bjys,&#10;code something in Temp,&#10;good action ,commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="219" y="0" key="CommitChangelistDialog2" timestamp="1589989784131">
+    <state x="219" y="0" key="CommitChangelistDialog2" timestamp="1589989821274">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="219" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1589989784131" />
+    <state x="219" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1589989821274" />
     <state x="110" y="122" key="FileChooserDialogImpl" timestamp="1589902715288">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -219,17 +184,21 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="157" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1589902585684" />
-    <state x="261" y="90" key="Vcs.Push.Dialog.v2" timestamp="1589903323518">
+    <state x="261" y="90" key="Vcs.Push.Dialog.v2" timestamp="1589989966431">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="261" y="90" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1589903323518" />
-    <state x="406" y="206" key="com.intellij.ide.util.TipDialog" timestamp="1589989445110">
+    <state x="261" y="90" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1589989966431" />
+    <state x="406" y="206" key="com.intellij.ide.util.TipDialog" timestamp="1590033391745">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="406" y="206" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1589989445110" />
+    <state x="406" y="206" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1590033391745" />
     <state x="536" y="182" key="git4idea.merge.GitMergeDialog" timestamp="1589984472482">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="536" y="182" key="git4idea.merge.GitMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1589984472482" />
+    <state x="453" y="182" key="git4idea.merge.GitPullDialog" timestamp="1590033403234">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="453" y="182" key="git4idea.merge.GitPullDialog/0.0.1536.834@0.0.1536.834" timestamp="1590033403234" />
   </component>
 </project>
