@@ -188,12 +188,13 @@ public class ActionSelenium {
         }
     }
     /**
-     * 改进 uploadFile
+     * 改进 上传图片
      */
     public void operateUploadFile2(){
     String jsString = "document.getElementsByClassName('update-avator')[0].style.bottom = '0';";
     String filePath = "C:\\Users\\19381\\Desktop\\业务公式项.png";
     driver.get("http://www.imooc.com/user/setprofile");
+    this.sleep(2000);
     JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
     jsExecutor.executeScript(jsString);
 
@@ -260,8 +261,19 @@ public class ActionSelenium {
     }
 
     /**
-     *
+     * 切换到iframe
      */
+    public void operateIframe(){
+        driver.get("http://www.imooc.com/wiki/create");
+        WebElement element = driver.findElement(By.id("ueditor_0"));
+        driver.switchTo().frame(element);
+        this.sleep(2000);
+        driver.findElement(By.tagName("body")).sendKeys("this is a test");
+        // 切换出frame
+        //driver.switchTo().defaultContent();
+        this.sleep(2000);
+
+    }
     public static void main(String[] args) {
         ActionSelenium as = new ActionSelenium();
         // 初始化
@@ -282,6 +294,10 @@ public class ActionSelenium {
 //        as.operateInputBox();
 //        as.oparateButton();
 //        as.operateRadioBox();
+        // -----    -----
+        as.operateInputBox();
+        as.oparateButton();
+        as.operateIframe();
 
         try {
             Thread.sleep(3000);

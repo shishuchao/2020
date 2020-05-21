@@ -6,6 +6,8 @@ import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
 import io.netty.channel.oio.OioEventLoopGroup;
 import io.netty.channel.socket.oio.OioServerSocketChannel;
+import org.testng.annotations.Test;
+import org.testng.annotations.TestInstance;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -19,6 +21,8 @@ import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.sql.Driver;
+import java.sql.DriverManager;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -251,5 +255,10 @@ public class Java8Tester{
      *     private String email;
      * }
      */
+    @Test
+    public void testIframe(){
+        System.setProperty("","");
+
+    }
 
 }
