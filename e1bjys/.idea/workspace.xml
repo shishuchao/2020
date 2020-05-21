@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4b0e3a9-e6d9-4414-a31e-5951b4b99983" name="Default Changelist" comment="要经常提交，&#10;不提交一半的工程，&#10;多利用分支">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_50_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_50_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d4b0e3a9-e6d9-4414-a31e-5951b4b99983" name="Default Changelist" comment="要经常提交，&#10;不提交一半的工程，&#10;多利用分支" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +92,7 @@
       <workItem from="1589929638513" duration="600000" />
       <workItem from="1590016381417" duration="5346000" />
       <workItem from="1590037947012" duration="308000" />
-      <workItem from="1590038284194" duration="137000" />
+      <workItem from="1590038284194" duration="413000" />
     </task>
     <task id="LOCAL-00001" summary="要经常提交，&#10;不提交一半的工程，&#10;多利用分支">
       <created>1590016540200</created>
@@ -125,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590038143154</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="要经常提交，&#10;不提交一半的工程，&#10;多利用分支">
+      <created>1590038497800</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590038497800</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,18 +180,20 @@
     </state>
     <state width="1877" height="294" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590018624322" />
     <state width="1493" height="294" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1590022647738" />
-    <state x="147" y="65" key="MergeDialog" timestamp="1590016705795">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="147" y="65" key="MergeDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1590016705795" />
-    <state x="653" y="289" key="MultipleFileMergeDialog" timestamp="1590016705822">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="653" y="289" key="MultipleFileMergeDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1590016705822" />
-    <state x="196" y="-1080" key="SettingsEditor" timestamp="1590038422220">
+    <state x="184" y="-998" key="MergeDialog" timestamp="1590038652716">
       <screen x="0" y="-1080" width="1920" height="1050" />
     </state>
-    <state x="196" y="-1080" key="SettingsEditor/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038422220" />
+    <state x="184" y="-998" key="MergeDialog/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038652716" />
+    <state x="147" y="65" key="MergeDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1590016705795" />
+    <state x="816" y="-716" key="MultipleFileMergeDialog" timestamp="1590038652739">
+      <screen x="0" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="816" y="-716" key="MultipleFileMergeDialog/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038652739" />
+    <state x="653" y="289" key="MultipleFileMergeDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1590016705822" />
+    <state x="196" y="-1080" key="SettingsEditor" timestamp="1590038699796">
+      <screen x="0" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="196" y="-1080" key="SettingsEditor/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038699796" />
     <state x="157" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1589902585684" />
     <state x="451" y="-887" key="Vcs.Push.Dialog.v2" timestamp="1590038195419">
       <screen x="0" y="-1080" width="1920" height="1050" />
@@ -202,11 +208,15 @@
       <screen x="0" y="-1080" width="1920" height="1050" />
     </state>
     <state x="749" y="-754" key="git4idea.merge.GitMergeDialog/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038221152" />
-    <state x="611" y="-804" key="git4idea.merge.GitPullDialog" timestamp="1590038316994">
+    <state x="611" y="-804" key="git4idea.merge.GitPullDialog" timestamp="1590038565332">
       <screen x="0" y="-1080" width="1920" height="1050" />
     </state>
-    <state x="611" y="-804" key="git4idea.merge.GitPullDialog/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038316994" />
+    <state x="611" y="-804" key="git4idea.merge.GitPullDialog/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038565332" />
     <state x="489" y="219" key="git4idea.merge.GitPullDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1590016721264" />
+    <state x="815" y="-647" key="git4idea.ui.GitStashDialog" timestamp="1590038529475">
+      <screen x="0" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="815" y="-647" key="git4idea.ui.GitStashDialog/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038529475" />
     <state x="616" y="-297" key="run.anything.popup" timestamp="1590018793440">
       <screen x="0" y="-1080" width="1920" height="1050" />
     </state>
