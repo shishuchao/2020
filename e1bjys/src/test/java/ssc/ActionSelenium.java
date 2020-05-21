@@ -21,34 +21,13 @@ public class ActionSelenium {
     public WebDriver driver = null;
     public String windowsHandle = null;
 
-    public static void main(String[] args) {
-        ActionSelenium as = new ActionSelenium();
-        // 初始化
-        as.initDriver();
-        // 登录
-        as.operateMouse();
-        //as.operateInputBox();
-        //as.oparateButton();
 
-        //as.operateComboList();
-        //as.operateUploadFile();
-        //as.operateRadioBox();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        // 关闭当前页签
-        //as.driver.close();
-        // 关闭浏览器
-        as.driver.quit();
-    }
 
     /**
      * 初始化driver
      */
     public void initDriver(){
-        System.setProperty("webdriver.chrome.driver","E:/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","D:/_Projects/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://www.imooc.com");
@@ -267,6 +246,31 @@ public class ActionSelenium {
         this.sleep(2000);
     }
 
+    /**
+     *
+     */
+    public static void main(String[] args) {
+        ActionSelenium as = new ActionSelenium();
+        // 初始化
+        as.initDriver();
+        // 登录
+        //as.operateMouse();
+        //as.operateInputBox();
+        //as.oparateButton();
+
+        //as.operateComboList();
+        as.operateUploadFile();
+        //as.operateRadioBox();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        // 关闭当前页签
+        //as.driver.close();
+        // 关闭浏览器
+        as.driver.quit();
+    }
 
 
 }

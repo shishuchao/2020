@@ -2,7 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2706d0d-a9d6-4429-98d6-26a18cbff5df" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_3_2_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_3_2_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_64.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_64.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_codeborne_phantomjsdriver_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_codeborne_phantomjsdriver_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_21_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_21_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_22.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_26.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_26.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_3_v20170317.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_3_v20170317.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_3_v20170317.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_3_v20170317.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_1_v20170120.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_1_v20170120.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_1_v20170120.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_1_v20170120.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_3_v20170317.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_3_v20170317.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_3_v20170317.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_3_v20170317.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_3_v20170317.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_3_v20170317.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_htmlunit_driver_2_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_htmlunit_driver_2_26.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ssc/ActionSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssc/ActionSelenium.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +94,22 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
-  <component name="RunManager" selected="Application.Temp">
+  <component name="RunManager" selected="Application.ActionSelenium">
+    <configuration name="ActionSelenium" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ssc.ActionSelenium" />
+      <module name="seleniumImooc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ssc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Temp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ssc.Temp" />
       <module name="seleniumImooc" />
@@ -92,6 +154,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ActionSelenium" />
         <item itemvalue="Application.Temp" />
         <item itemvalue="Application.temp" />
         <item itemvalue="JUnit.MyExceptionFa.testGetString" />
@@ -125,6 +188,7 @@
       <workItem from="1589971995173" duration="1958000" />
       <workItem from="1589977060513" duration="5108000" />
       <workItem from="1589989445379" duration="794000" />
+      <workItem from="1590033389219" duration="2281000" />
     </task>
     <task id="LOCAL-00001" summary="maven updates something ,&#10;i don't build or create any code">
       <created>1589903312483</created>
@@ -140,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589989822280</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="it looks like committing before pull is needed">
+      <created>1590033468053</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590033468053</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,41 +220,50 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="maven updates something ,&#10;i don't build or create any code" />
     <MESSAGE value="didn't code within e1bjys,&#10;code something in Temp,&#10;good action ,commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="didn't code within e1bjys,&#10;code something in Temp,&#10;good action ,commit" />
+    <MESSAGE value="it looks like committing before pull is needed" />
+    <option name="LAST_COMMIT_MESSAGE" value="it looks like committing before pull is needed" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="219" y="0" key="CommitChangelistDialog2" timestamp="1589989821274">
+    <state x="219" y="0" key="CommitChangelistDialog2" timestamp="1590033467169">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="219" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1589989821274" />
+    <state x="219" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1590033467169" />
     <state x="110" y="122" key="FileChooserDialogImpl" timestamp="1589902715288">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="110" y="122" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1589902715288" />
-    <state width="1483" height="238" key="GridCell.Tab.0.bottom" timestamp="1589989406552">
+    <state width="1483" height="238" key="GridCell.Tab.0.bottom" timestamp="1590035565557">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1483" height="238" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1589989406552" />
+    <state width="1483" height="238" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1590035565557" />
     <state width="1483" height="201" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589976826109" />
-    <state width="1483" height="238" key="GridCell.Tab.0.center" timestamp="1589989406551">
+    <state width="1483" height="238" key="GridCell.Tab.0.center" timestamp="1590035565556">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1483" height="238" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1589989406551" />
+    <state width="1483" height="238" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1590035565556" />
     <state width="1483" height="201" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1589976826108" />
-    <state width="1483" height="238" key="GridCell.Tab.0.left" timestamp="1589989406551">
+    <state width="1483" height="238" key="GridCell.Tab.0.left" timestamp="1590035565556">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1483" height="238" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1589989406551" />
+    <state width="1483" height="238" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1590035565556" />
     <state width="1483" height="201" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1589976826107" />
-    <state width="1483" height="238" key="GridCell.Tab.0.right" timestamp="1589989406552">
+    <state width="1483" height="238" key="GridCell.Tab.0.right" timestamp="1590035565556">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1483" height="238" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1589989406552" />
+    <state width="1483" height="238" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1590035565556" />
     <state width="1483" height="201" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589976826109" />
-    <state x="157" y="0" key="SettingsEditor" timestamp="1589902585684">
+    <state x="147" y="72" key="MergeDialog" timestamp="1590033516451">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="157" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1589902585684" />
+    <state x="147" y="72" key="MergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1590033516451" />
+    <state x="411" y="68" key="MultipleFileMergeDialog" timestamp="1590033516466">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="411" y="68" key="MultipleFileMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1590033516466" />
+    <state x="157" y="0" key="SettingsEditor" timestamp="1590033857865">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="157" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1590033857865" />
     <state x="261" y="90" key="Vcs.Push.Dialog.v2" timestamp="1589989966431">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -196,9 +276,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="536" y="182" key="git4idea.merge.GitMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1589984472482" />
-    <state x="453" y="182" key="git4idea.merge.GitPullDialog" timestamp="1590033403234">
+    <state x="453" y="182" key="git4idea.merge.GitPullDialog" timestamp="1590033478220">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="453" y="182" key="git4idea.merge.GitPullDialog/0.0.1536.834@0.0.1536.834" timestamp="1590033403234" />
+    <state x="453" y="182" key="git4idea.merge.GitPullDialog/0.0.1536.834@0.0.1536.834" timestamp="1590033478220" />
   </component>
 </project>
