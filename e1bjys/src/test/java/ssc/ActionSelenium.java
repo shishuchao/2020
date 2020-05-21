@@ -27,7 +27,8 @@ public class ActionSelenium {
      * 初始化driver
      */
     public void initDriver(){
-        System.setProperty("webdriver.chrome.driver","D:/_Projects/chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver","D:/_Projects/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","E:/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://www.imooc.com");
@@ -143,7 +144,7 @@ public class ActionSelenium {
         String originalWindow = driver.getWindowHandle();
 
         //Check we don't have other windows open already
-        assert driver.getWindowHandles().size() == 1;
+        //assert driver.getWindowHandles().size() == 1;
 
         //Click the link which opens in a new window
         //driver.findElement(By.linkText("new window")).click();
@@ -153,6 +154,7 @@ public class ActionSelenium {
         driver.get("http://www.imooc.com/user/setprofile");
 
         /**
+         * 上一个页面 / 下一个页面
          * driver.navigate().back();
          * try {
          *     Thread.sleep(2000);
@@ -185,6 +187,19 @@ public class ActionSelenium {
             e.printStackTrace();
         }
     }
+    /**
+     * 改进 上传图片
+     */
+    public void operateUploadFile2(){
+    String jsString = "document.getElementsByClassName('update-avator')[0].style.bottom = '0';";
+    String filePath = "C:\\Users\\19381\\Desktop\\业务公式项.png";
+    driver.get("http://www.imooc.com/user/setprofile");
+    this.sleep(2000);
+    JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+    jsExecutor.executeScript(jsString);
+
+
+    }
 
     /**
      * 下拉框
@@ -212,7 +227,6 @@ public class ActionSelenium {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
     }
     /**
      * 封装等待
@@ -247,20 +261,44 @@ public class ActionSelenium {
     }
 
     /**
-     *
+     * 切换到iframe
      */
+    public void operateIframe(){
+        driver.get("http://www.imooc.com/wiki/create");
+        WebElement element = driver.findElement(By.id("ueditor_0"));
+        driver.switchTo().frame(element);
+        this.sleep(2000);
+        driver.findElement(By.tagName("body")).sendKeys("this is a test");
+        // 切换出frame
+        //driver.switchTo().defaultContent();
+        this.sleep(2000);
+
+    }
     public static void main(String[] args) {
         ActionSelenium as = new ActionSelenium();
         // 初始化
         as.initDriver();
-        // 登录
-        //as.operateMouse();
-        //as.operateInputBox();
-        //as.oparateButton();
 
-        //as.operateComboList();
-        as.operateUploadFile();
-        //as.operateRadioBox();
+        // -----鼠标-----
+//        as.operateMouse();
+        // -----上传图片-----
+//        as.operateInputBox();
+//        as.oparateButton();
+//        as.operateUploadFile();
+//        as.operateUploadFile2();
+        // -----  -----
+//        as.operateInputBox();
+//        as.oparateButton();
+//        as.operateComboList();
+        // -----   -----
+//        as.operateInputBox();
+//        as.oparateButton();
+//        as.operateRadioBox();
+        // -----    -----
+        as.operateInputBox();
+        as.oparateButton();
+        as.operateIframe();
+
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {

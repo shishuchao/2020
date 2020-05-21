@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:2020" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="d2706d0d-a9d6-4429-98d6-26a18cbff5df" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/seleniumImooc.kotlin_module" afterDir="false" />
@@ -13,17 +32,13 @@
       <change afterPath="$PROJECT_DIR$/target/test-classes/ssc/Temp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="d4b0e3a9-e6d9-4414-a31e-5951b4b99983" name="Default Changelist" comment="要经常提交，&#10;不提交一半的工程，&#10;多利用分支" />
+>>>>>>> 013fdbcee92afe6071c972c8bd115a17425cc9b7
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -37,26 +52,27 @@
     </option>
   </component>
   <component name="ProjectId" id="1c82fnwWAe0XhpJ8JYvotKqzttQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../IDEA/mall-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mall-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
-  <component name="RunManager" selected="Application.ActionSelenium">
+  <component name="RunManager">
     <configuration name="ActionSelenium" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ssc.ActionSelenium" />
       <module name="seleniumImooc" />
@@ -70,107 +86,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Temp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ssc.Temp" />
-      <module name="seleniumImooc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ssc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="temp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ssc.temp" />
-      <module name="seleniumImooc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ssc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyExceptionFa.testGetString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="seleniumImooc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ssc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ssc" />
-      <option name="MAIN_CLASS_NAME" value="ssc.MyExceptionFa" />
-      <option name="METHOD_NAME" value="testGetString" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ActionSelenium" />
-        <item itemvalue="Application.Temp" />
-        <item itemvalue="Application.temp" />
-        <item itemvalue="JUnit.MyExceptionFa.testGetString" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d2706d0d-a9d6-4429-98d6-26a18cbff5df" name="Default Changelist" comment="" />
+      <changelist id="d4b0e3a9-e6d9-4414-a31e-5951b4b99983" name="Default Changelist" comment="要经常提交，&#10;不提交一半的工程，&#10;多利用分支" />
       <created>1589896005211</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589896005211</updated>
       <workItem from="1589896006531" duration="22000" />
+<<<<<<< HEAD
       <workItem from="1589902431033" duration="908000" />
       <workItem from="1589971995173" duration="1958000" />
       <workItem from="1589977060513" duration="5108000" />
       <workItem from="1589989445379" duration="794000" />
       <workItem from="1590033389219" duration="3201000" />
+=======
+      <workItem from="1589902431033" duration="692000" />
+      <workItem from="1589929638513" duration="600000" />
+      <workItem from="1590016381417" duration="5346000" />
+      <workItem from="1590037947012" duration="308000" />
+      <workItem from="1590038284194" duration="413000" />
+>>>>>>> 013fdbcee92afe6071c972c8bd115a17425cc9b7
     </task>
-    <task id="LOCAL-00001" summary="maven updates something ,&#10;i don't build or create any code">
-      <created>1589903312483</created>
+    <task id="LOCAL-00001" summary="要经常提交，&#10;不提交一半的工程，&#10;多利用分支">
+      <created>1590016540200</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1589903312483</updated>
+      <updated>1590016540200</updated>
     </task>
-    <task id="LOCAL-00002" summary="didn't code within e1bjys,&#10;code something in Temp,&#10;good action ,commit">
-      <created>1589989822280</created>
+    <task id="LOCAL-00002" summary="要经常提交，&#10;不提交一半的工程，&#10;多利用分支">
+      <created>1590022626382</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1589989822280</updated>
+      <updated>1590022626382</updated>
     </task>
-    <task id="LOCAL-00003" summary="it looks like committing before pull is needed">
-      <created>1590033468053</created>
+    <task id="LOCAL-00003" summary="要经常提交，&#10;不提交一半的工程，&#10;多利用分支">
+      <created>1590038009895</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1590033468053</updated>
+      <updated>1590038009895</updated>
     </task>
+    <task id="LOCAL-00004" summary="要经常提交，&#10;不提交一半的工程，&#10;多利用分支">
+      <created>1590038143154</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590038143154</updated>
+    </task>
+<<<<<<< HEAD
     <task id="LOCAL-00004" summary="it looks like committing before pull is needed">
       <created>1590035683548</created>
       <option name="number" value="00004" />
@@ -184,59 +159,87 @@
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
       <updated>1590064550221</updated>
+=======
+    <task id="LOCAL-00005" summary="要经常提交，&#10;不提交一半的工程，&#10;多利用分支">
+      <created>1590038497800</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590038497800</updated>
+>>>>>>> 013fdbcee92afe6071c972c8bd115a17425cc9b7
     </task>
     <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="maven updates something ,&#10;i don't build or create any code" />
-    <MESSAGE value="didn't code within e1bjys,&#10;code something in Temp,&#10;good action ,commit" />
-    <MESSAGE value="it looks like committing before pull is needed" />
-    <option name="LAST_COMMIT_MESSAGE" value="it looks like committing before pull is needed" />
+    <MESSAGE value="要经常提交，&#10;不提交一半的工程，&#10;多利用分支" />
+    <option name="LAST_COMMIT_MESSAGE" value="要经常提交，&#10;不提交一半的工程，&#10;多利用分支" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="219" y="0" key="CommitChangelistDialog2" timestamp="1590035682698">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="219" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1590035682698" />
+=======
+    <state x="845" y="-688" key="#Notifications" timestamp="1590038171419">
+      <screen x="0" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="845" y="-688" key="#Notifications/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038171419" />
+>>>>>>> 013fdbcee92afe6071c972c8bd115a17425cc9b7
     <state x="110" y="122" key="FileChooserDialogImpl" timestamp="1589902715288">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="110" y="122" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1589902715288" />
-    <state width="1483" height="238" key="GridCell.Tab.0.bottom" timestamp="1590035565557">
+    <state width="1493" height="294" key="GridCell.Tab.0.bottom" timestamp="1590022647738">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1483" height="238" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1590035565557" />
-    <state width="1483" height="201" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589976826109" />
-    <state width="1483" height="238" key="GridCell.Tab.0.center" timestamp="1590035565556">
+    <state width="1877" height="294" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590018624322" />
+    <state width="1493" height="294" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1590022647738" />
+    <state width="1493" height="294" key="GridCell.Tab.0.center" timestamp="1590022647738">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1483" height="238" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1590035565556" />
-    <state width="1483" height="201" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1589976826108" />
-    <state width="1483" height="238" key="GridCell.Tab.0.left" timestamp="1590035565556">
+    <state width="1877" height="294" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590018624321" />
+    <state width="1493" height="294" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1590022647738" />
+    <state width="1493" height="294" key="GridCell.Tab.0.left" timestamp="1590022647737">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1483" height="238" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1590035565556" />
-    <state width="1483" height="201" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1589976826107" />
-    <state width="1483" height="238" key="GridCell.Tab.0.right" timestamp="1590035565556">
+    <state width="1877" height="294" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590018624321" />
+    <state width="1493" height="294" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1590022647737" />
+    <state width="1493" height="294" key="GridCell.Tab.0.right" timestamp="1590022647738">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1483" height="238" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1590035565556" />
-    <state width="1483" height="201" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589976826109" />
-    <state x="147" y="72" key="MergeDialog" timestamp="1590033516451">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="294" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590018624322" />
+    <state width="1493" height="294" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1590022647738" />
+    <state x="184" y="-998" key="MergeDialog" timestamp="1590038652716">
+      <screen x="0" y="-1080" width="1920" height="1050" />
     </state>
-    <state x="147" y="72" key="MergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1590033516451" />
-    <state x="411" y="68" key="MultipleFileMergeDialog" timestamp="1590033516466">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="184" y="-998" key="MergeDialog/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038652716" />
+    <state x="147" y="65" key="MergeDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1590016705795" />
+    <state x="816" y="-716" key="MultipleFileMergeDialog" timestamp="1590038652739">
+      <screen x="0" y="-1080" width="1920" height="1050" />
     </state>
-    <state x="411" y="68" key="MultipleFileMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1590033516466" />
-    <state x="157" y="0" key="SettingsEditor" timestamp="1590033857865">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="816" y="-716" key="MultipleFileMergeDialog/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038652739" />
+    <state x="653" y="289" key="MultipleFileMergeDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1590016705822" />
+    <state x="196" y="-1080" key="SettingsEditor" timestamp="1590038699796">
+      <screen x="0" y="-1080" width="1920" height="1050" />
     </state>
+<<<<<<< HEAD
     <state x="157" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1590033857865" />
     <state x="261" y="90" key="Vcs.Push.Dialog.v2" timestamp="1590035710332">
       <screen x="0" y="0" width="1536" height="834" />
@@ -258,5 +261,35 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="453" y="182" key="git4idea.merge.GitPullDialog/0.0.1536.834@0.0.1536.834" timestamp="1590064737945" />
+=======
+    <state x="196" y="-1080" key="SettingsEditor/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038699796" />
+    <state x="157" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1589902585684" />
+    <state x="451" y="-887" key="Vcs.Push.Dialog.v2" timestamp="1590038195419">
+      <screen x="0" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="451" y="-887" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038195419" />
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1590022631804" />
+    <state x="755" y="-640" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590038076751">
+      <screen x="0" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="755" y="-640" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038076751" />
+    <state x="749" y="-754" key="git4idea.merge.GitMergeDialog" timestamp="1590038221152">
+      <screen x="0" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="749" y="-754" key="git4idea.merge.GitMergeDialog/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038221152" />
+    <state x="611" y="-804" key="git4idea.merge.GitPullDialog" timestamp="1590038565332">
+      <screen x="0" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="611" y="-804" key="git4idea.merge.GitPullDialog/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038565332" />
+    <state x="489" y="219" key="git4idea.merge.GitPullDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1590016721264" />
+    <state x="815" y="-647" key="git4idea.ui.GitStashDialog" timestamp="1590038529475">
+      <screen x="0" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="815" y="-647" key="git4idea.ui.GitStashDialog/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590038529475" />
+    <state x="616" y="-297" key="run.anything.popup" timestamp="1590018793440">
+      <screen x="0" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="616" y="-297" key="run.anything.popup/0.0.1536.834/0.-1080.1920.1050@0.-1080.1920.1050" timestamp="1590018793440" />
+>>>>>>> 013fdbcee92afe6071c972c8bd115a17425cc9b7
   </component>
 </project>
