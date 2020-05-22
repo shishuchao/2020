@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
@@ -26,12 +27,23 @@ public class ActionSelenium {
     /**
      * 初始化driver
      */
-    public void initDriver(){
-        //System.setProperty("webdriver.chrome.driver","D:/_Projects/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver","E:/chromedriver.exe");
-        driver = new ChromeDriver();
+    public void initDriver(String brower){
+        if(brower.equalsIgnoreCase("ie")){
+            System.setProperty("webdriver.ie.driver","E:\\IEDriverServer.exe");
+            driver = new InternetExplorerDriver();
+        }if(brower.equalsIgnoreCase("chrome19")) {
+            System.setProperty("webdriver.chrome.driver","E:/chromedriver.exe");
+            driver = new ChromeDriver();
+            driver.get("http://www.imooc.com");
+        }if(brower.equalsIgnoreCase("chrome13")){
+            System.setProperty("webdriver.chrome.driver","D:/_Projects/chromedriver.exe");
+            driver = new ChromeDriver();
+            driver.get("http://www.imooc.com");
+        }else{
+            System.out.println("指定是浏览器类型不对");
+        }
         driver.manage().window().maximize();
-        driver.get("http://www.imooc.com");
+
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -264,50 +276,86 @@ public class ActionSelenium {
      * 切换到iframe
      */
     public void operateIframe(){
-        driver.get("http://www.imooc.com/wiki/create");
-        WebElement element = driver.findElement(By.id("ueditor_0"));
-        driver.switchTo().frame(element);
-        this.sleep(2000);
-        driver.findElement(By.tagName("body")).sendKeys("this is a test");
+        // 通过webdriver的get方法调用浏览器，打开网页
+        driver.get("http://10.2.112.21:30302/ais/login/loginView.jsp");
+        // 最大化浏览器窗口
+        driver.manage().window().maximize();
+        this.sleep(1000);
+        // 通过页面元素的name=j_username定位到 输入框
+        WebElement name = driver.findElement(By.name("j_username"));
+        // 在输入框输入‘ ’
+        name.sendKeys("shiscsj");
+        // 通过页面元素的name=j_password定位到 输入框
+        WebElement pass = driver.findElement(By.name("j_password"));
+        // 在输入框输入‘ ’
+        pass.sendKeys("123");
+        this.sleep(1000);
+        driver.findElement(By.id("loginSubmit")).click();
+
+        // 进入 综合管理系统
+        driver.get("http://10.2.112.21:30302/ais/portal/simple/simple-firstPageAction!menu.action?parentMenuId=10&fromPortal=1");
+        // 进入 计划管理
+        driver.findElement(By.id("menu1010")).click();
+        this.sleep(1000);
+        // 进入 年度计划制定
+        driver.findElement(By.id("_easyui_tree_1")).click();
+        this.sleep(1000);
+        // 进入 iframe
+        WebElement iframe = driver.findElement(By.id("101030id"));
+        driver.switchTo().frame(iframe);
+        driver.findElement(By.id("newYear")).click();
         // 切换出frame
         //driver.switchTo().defaultContent();
         this.sleep(2000);
+        driver.quit();
 
     }
+
+    /**
+     * 窗口
+     *
+     */
+    public void operateWindows(){
+        //driver.getWindowHandle();
+        //driver.getWindowHandles();
+
+    }
+
     public static void main(String[] args) {
         ActionSelenium as = new ActionSelenium();
-        // 初始化
-        as.initDriver();
+        try{
+            // 初始化
+            as.initDriver("ie");
 
-        // -----鼠标-----
-//        as.operateMouse();
-        // -----上传图片-----
-//        as.operateInputBox();
-//        as.oparateButton();
-//        as.operateUploadFile();
-//        as.operateUploadFile2();
-        // -----  -----
-//        as.operateInputBox();
-//        as.oparateButton();
-//        as.operateComboList();
-        // -----   -----
-//        as.operateInputBox();
-//        as.oparateButton();
-//        as.operateRadioBox();
-        // -----    -----
-        as.operateInputBox();
-        as.oparateButton();
-        as.operateIframe();
-
-        try {
+            // -----鼠标-----
+//          as.operateMouse();
+            // -----上传图片-----
+//          as.operateInputBox();
+//          as.oparateButton();
+//          as.operateUploadFile();
+//          as.operateUploadFile2();
+            // -----  -----
+//          as.operateInputBox();
+//          as.oparateButton();
+//          as.operateComboList();
+            // -----   -----
+//          as.operateInputBox();
+//          as.oparateButton();
+//          as.operateRadioBox();
+            // -----    -----
+            as.operateIframe();
             Thread.sleep(3000);
+
         } catch (InterruptedException e) {
             e.printStackTrace();
+        } finally {
+            // 关闭当前页签
+            //as.driver.close();
+            // 关闭浏览器
+            as.driver.quit();
         }
-        // 关闭当前页签
-        //as.driver.close();
-        // 关闭浏览器
-        as.driver.quit();
+
+
     }
 
 
