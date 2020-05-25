@@ -42,7 +42,12 @@ public class ActionSelenium {
         }else{
             System.out.println("指定是浏览器类型不对");
         }
+		//最大化
         driver.manage().window().maximize();
+		//全屏
+		driver.manage().window().fullscreen();
+		//最小化
+		driver.manage().window().minimize();
 
         try {
             Thread.sleep(2000);
