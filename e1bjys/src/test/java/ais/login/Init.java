@@ -4,8 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-import java.sql.Driver;
-
 /**
  * 初始化driver和首页
  * @author ssc
@@ -17,11 +15,12 @@ public class Init {
      * 初始化
      */
 
-    public void init(WebDriver driver) {
+    public WebDriver init() {
         System.setProperty("webdriver.ie.driver", "E:\\IEDriverServer.exe");
-        driver = new InternetExplorerDriver();
+        WebDriver driver = new InternetExplorerDriver();
         driver.get("http://10.2.112.21:32659/ais/login/loginView.jsp");
         this.sleep(2000);
+        return driver;
 
     }
 
@@ -47,5 +46,8 @@ public class Init {
         driver.findElement(By.id("loginSubmit")).click();
         this.sleep(2000);
     }
+
+
+
 
 }
