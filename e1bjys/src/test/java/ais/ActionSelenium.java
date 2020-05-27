@@ -35,6 +35,7 @@ public class ActionSelenium {
 
 
        }finally {
+           init.sleep(3000);
            driver.close();
 
        }
