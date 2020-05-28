@@ -34,10 +34,14 @@ public class SelectDriver {
 
             return new ChromeDriver();
 
-        }else{
+        }else {
             System.out.println("your brower spelling is not right");
-            return  null;
+            return null;
         }
+
+    }
+    public SelectDriver(){
+
 
     }
 
