@@ -1,10 +1,8 @@
 package ssc.testCase;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import ssc.base.Brower;
 import ssc.base.DriverBase;
 import ssc.business.*;
 
@@ -28,12 +26,23 @@ public class Login extends CaseBase {
         driver.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         loginpro = new LoginPro(driver);
         homePagePro = new HomePagePro(driver);
-        //coursePagePro = new CoursePagePro(driver);
-        //courseListPagePro = new CourseListPagePro(driver);
-        //sureOrderPagePro = new SureOrderPagePro(driver);
+        coursePagePro = new CoursePagePro(driver);
+        courseListPagePro = new CourseListPagePro(driver);
+        orderPayPagePro = new OrderPayPagePro(driver);
+        sureOrderPagePro = new SureOrderPagePro(driver);
 
     }
 
+    @Test
+    public void testLoginHome(){
+        driver.get("http://coding.imooc.com/");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        homePagePro.clickLoginButton();
+    }
 //    @Test
 //    public void testBrower(){
 //        public WebDriver driver;
@@ -49,7 +58,7 @@ public class Login extends CaseBase {
 
 
     @AfterClass
-    public void test(){
+    public void test2(){
 
     }
 }
