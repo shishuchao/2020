@@ -11,9 +11,7 @@ import org.testng.annotations.TestInstance;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.net.InetSocketAddress;
-import java.net.ServerSocket;
-import java.net.Socket;
+import java.net.*;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
@@ -257,8 +255,7 @@ public class Java8Tester{
      */
     @Test
     public void testIframe(){
-        System.setProperty("","");
-        // 做一些修改，单独提交
+
 
     }
 

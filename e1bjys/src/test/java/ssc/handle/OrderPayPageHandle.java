@@ -9,8 +9,12 @@ import ssc.page.OrderPayPage;
 public class OrderPayPageHandle {
     public DriverBase driver;
     public OrderPayPage orderPayPage;
-    public OrderPayPageHandle(DriverBase driver) {
 
-
+    /**
+     *
+     */
+    public OrderPayPageHandle(DriverBase driver2) {
+        this.driver = driver2;
+        orderPayPage = new OrderPayPage(driver);
     }
 }

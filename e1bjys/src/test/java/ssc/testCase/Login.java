@@ -20,9 +20,13 @@ public class Login extends CaseBase {
     public OrderPayPagePro orderPayPagePro;
     public CourseListPagePro courseListPagePro;
     public SureOrderPagePro sureOrderPagePro;
+
+    /**
+     *
+     */
     @BeforeClass
     public void testLogin(){
-        this.driver = initdriver("chrome");
+        this.driver = initdriver();
         driver.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         loginpro = new LoginPro(driver);
         homePagePro = new HomePagePro(driver);
@@ -33,6 +37,9 @@ public class Login extends CaseBase {
 
     }
 
+    /**
+     *
+     */
     @Test
     public void testLoginHome(){
         driver.get("http://coding.imooc.com/");
@@ -43,22 +50,17 @@ public class Login extends CaseBase {
         }
         homePagePro.clickLoginButton();
     }
-//    @Test
-//    public void testBrower(){
-//        public WebDriver driver;
-//        Brower brower = new Brower();
-//        driver = brower.setChrome19();
-//        try {
-//            Thread.sleep(2000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//        driver.close();
-//    }
 
-
+    /**
+     *
+     */
     @AfterClass
     public void test2(){
-
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.close();
     }
 }

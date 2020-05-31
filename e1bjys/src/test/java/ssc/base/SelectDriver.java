@@ -7,6 +7,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.Test;
 
+import java.net.InetAddress;
+import java.net.NetworkInterface;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,35 +17,53 @@ import java.util.Map;
  */
 public class SelectDriver {
 
-    public WebDriver newDriver(String browerName){
-        if(browerName.equalsIgnoreCase("ie")){
+    /**
+     *
+     */
+    public WebDriver newDriver(){
+        if(getMac().equals(" ")){
             System.setProperty("webdriver.ie.driver","E:\\IEDriverServer.exe");
             System.out.println("it is ie now");
-
             return new InternetExplorerDriver();
-
-        }if(browerName.equalsIgnoreCase("chrome19")) {
+        }if(getMac().equals(" ")) {
             System.setProperty("webdriver.chrome.driver","E:/chromedriver.exe");
             System.out.println("it si chrome19 now");
-
             return new ChromeDriver();
-
-        }if(browerName.equalsIgnoreCase("chrome13")){
+        }if(getMac().equals("00-50-56-C0-00-08")){
             System.setProperty("webdriver.chrome.driver","D:/_Projects/chromedriver.exe");
             System.out.println("it is chrome13 now");
-
             return new ChromeDriver();
-
         }else {
-            System.out.println("your brower spelling is not right");
+            System.out.println("your brower is invalid");
             return null;
         }
-
-    }
-    public SelectDriver(){
-
-
     }
 
+    /**
+     *
+     */
+
+
+    /**
+     * 获取 MAC 地址
+     */
+    public String getMac() {
+        String macStr = null;
+        try {
+            InetAddress ip = InetAddress.getLocalHost();
+            NetworkInterface network = NetworkInterface.getByInetAddress(ip);
+            byte[] mac = network.getHardwareAddress();
+            System.out.print("Current MAC address : ");
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < mac.length; i++) {
+                sb.append(String.format("%02X%s", mac[i], (i < mac.length - 1) ? "-" : ""));
+            }
+            macStr = sb.toString();
+            System.out.println(sb.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return macStr;
+    }
 
 }

@@ -8,7 +8,7 @@ import ssc.base.DriverBase;
 public class HomePage extends BasePage{
 
     /**
-     * @param driver
+     *
      */
     public HomePage(DriverBase driver) {
         super(driver);

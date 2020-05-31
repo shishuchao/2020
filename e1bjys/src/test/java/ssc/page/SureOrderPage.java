@@ -8,7 +8,6 @@ import ssc.base.DriverBase;
 public class SureOrderPage extends BasePage{
     /**
      *
-     * @param driver
      */
     public SureOrderPage(DriverBase driver) {
         super(driver);

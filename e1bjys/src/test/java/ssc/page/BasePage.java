@@ -10,7 +10,7 @@ public class BasePage {
 
     /**
      *
-     * @param driver
+     *
      */
     public BasePage(DriverBase driver) {
         this.driver = driver;

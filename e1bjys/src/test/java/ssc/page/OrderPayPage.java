@@ -8,7 +8,6 @@ import ssc.base.DriverBase;
 public class OrderPayPage extends BasePage{
     /**
      *
-     * @param driver
      */
     public OrderPayPage(DriverBase driver){
         super(driver);

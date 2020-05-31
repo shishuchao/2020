@@ -1,15 +1,20 @@
 package ssc.business;
 
 import ssc.base.DriverBase;
+import ssc.handle.CourseListPageHandle;
 
 /**
  *
  */
 public class CourseListPagePro {
+    public DriverBase driver;
+    public CourseListPageHandle courseListPageHandle;
+
     /**
      *
-     * @param driver
      */
-    public CourseListPagePro(DriverBase driver) {
+    public CourseListPagePro(DriverBase driver2) {
+        this.driver = driver2;
+        courseListPageHandle = new CourseListPageHandle(driver);
     }
 }

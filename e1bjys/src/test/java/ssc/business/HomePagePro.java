@@ -7,18 +7,21 @@ import ssc.handle.HomePageHandle;
  *
  */
 public class HomePagePro {
-//    public DriverBase driver;
+    public DriverBase driver;
     public HomePageHandle homePageHandle;
+
     /**
      *
-     * @param driver
      */
-    public HomePagePro(DriverBase driver) {
-//        this.driver = driver;
+    public HomePagePro(DriverBase driver2) {
+        this.driver = driver2;
         homePageHandle = new HomePageHandle(driver);
 
     }
 
+    /**
+     *
+     */
     public void clickLoginButton() {
     }
 }

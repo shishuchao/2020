@@ -14,9 +14,13 @@ public class DriverBase {
 
     public WebDriver driver;
 
-    public DriverBase(String brower) {
+    /**
+     *
+     */
+    public DriverBase() {
         SelectDriver driver2 = new SelectDriver();
-        this.driver = driver2.newDriver(brower);
+        this.driver = driver2.newDriver();
+
     }
 
     // get 封装
@@ -24,13 +28,16 @@ public class DriverBase {
         driver.get(s);
     }
 
-    // findElement 封装
+//    findElement 封装
     public WebElement findElement(By by){
         return driver.findElement(by);
     }
-    // findElements 封装
+//    findElements 封装
     public List<WebElement> findElements(By by){
         return driver.findElements(by);
     }
-
+//    close 封装
+    public void close() {
+        driver.close();
+    }
 }
