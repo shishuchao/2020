@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.mushishi</groupId>
-  <artifactId>selenium</artifactId>
+  <artifactId>seleniuminstance</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>selenium</name>
+  <name>seleniuminstance</name>
   <url>http://maven.apache.org</url>
 
   <properties>

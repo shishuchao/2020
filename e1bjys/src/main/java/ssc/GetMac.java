@@ -11,6 +11,8 @@ import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
+import java.net.UnknownHostException;
+import java.util.Enumeration;
 
 /**
  * author 13283
@@ -22,6 +24,7 @@ public class GetMac {
         if(getMac.getMac().equals("00-50-56-C0-00-08")){
             System.out.println(true);
         }
+        getMac.getHostName();
     }
     /**
      * @param drive 硬盘驱动器分区 如C,D
@@ -94,6 +97,7 @@ public class GetMac {
         String macStr = null;
         try {
             InetAddress ip = InetAddress.getLocalHost();
+            System.out.println(ip.toString());
             NetworkInterface network = NetworkInterface.getByInetAddress(ip);
             byte[] mac = network.getHardwareAddress();
             System.out.print("Current MAC address : ");
@@ -107,5 +111,63 @@ public class GetMac {
             e.printStackTrace();
         }
         return macStr;
+    }
+
+    /**
+     *
+     */
+    private static String getLocalMac() {
+
+        InetAddress ia = null;
+        StringBuffer sb = new StringBuffer("");
+
+        try {
+
+            Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
+
+            while (interfaces.hasMoreElements()) {
+                NetworkInterface networkInterface = interfaces.nextElement();
+                if (networkInterface != null) {
+
+                    String name = networkInterface.getName();
+                    System.out.println(name);
+                    if(!name.equals("xxxxxxxxx")){
+                        continue;
+                    }
+
+                    byte[] bytes = networkInterface.getHardwareAddress();
+                    if (bytes != null) {
+                        for (int i = 0; i < bytes.length; i++) {
+                            if (i != 0) {
+                                sb.append(":");
+                            }
+                            int tmp = bytes[i] & 0xff; // 字节转换为整数
+                            String str = Integer.toHexString(tmp);
+                            if (str.length() == 1) {
+                                sb.append("0" + str);
+                            } else {
+                                sb.append(str);
+                            }
+                        }
+                    }
+                }
+            }
+
+            System.out.println("本机MAC地址:" + sb.toString().toLowerCase());
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return sb.toString().toLowerCase();
+
+    }
+    public void getHostName() {
+        try {
+            InetAddress addr = InetAddress.getLocalHost();
+            System.out.println("IP地址：" + addr.getHostAddress() + "，主机名：" + addr.getHostName());
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
     }
 }
