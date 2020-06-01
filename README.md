@@ -1,6 +1,6 @@
 # 2020
 2020年的练习
 
-这里练习 e1bjys
+github 练习 e1bjys(SeleniumInstances)
 
-IDEA练习 aboutarray
+gitee 练习 JavaInstances
