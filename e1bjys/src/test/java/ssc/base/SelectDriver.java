@@ -20,7 +20,7 @@ public class SelectDriver {
             System.out.println("it is chrome19 now");
             return new ChromeDriver();
         }
-        if (getHostName().equals(" ")) {
+        if (getHostName().equals("LAPTOP-K9MH4579")) {
             System.setProperty("webdriver.chrome.driver", "D:/_Projects/chromedriver.exe");
             System.out.println("it is chrome13 now");
             return new ChromeDriver();
