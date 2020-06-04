@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite" parallel="false">
-	<parameter name ="username" value="13283155237"/>
+	<parameter name ="user" value="13283155237"/>
 	<parameter name ="pass" value="QWER_1234"/>
   <test name="Test1">
-	<listeners>
+<!--	<listeners>
         <listener class-name="com.mushishi.selenium.util.RetryListener" />
         <listener class-name="com.mushishi.selenium.util.TestNGListenerScreen" />
-    </listeners>
+    </listeners>-->
     <classes>
-      <class name="com.mushishi.selenium.testCase.SuiteTestLogin"/>
-      <class name="com.mushishi.selenium.testCase.SuiteTestBuy"/>
+      <!--<class name="com.mushishi.selenium.testCase.SuiteTestLogin"/>
+      <class name="com.mushishi.selenium.testCase.SuiteTestBuy"/>-->
+        <class name="ssc.testCase.Login"/>
     </classes>
   </test>
 </suite>

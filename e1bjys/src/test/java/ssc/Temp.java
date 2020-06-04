@@ -256,7 +256,6 @@ public class Java8Tester{
     @Test
     public void testIframe(){
 
-
     }
 
 }

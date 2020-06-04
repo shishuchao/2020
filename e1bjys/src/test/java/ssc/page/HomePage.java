@@ -21,7 +21,8 @@ public class HomePage extends BasePage{
     }
 
     /**
-     * 返回登录元素
+     * 接收 调用打开登录页面元素
+     * 返回 打开登录页面元素
      */
     public WebElement getElement(String key) {
         By loginLocator = locator.getLocator(key);

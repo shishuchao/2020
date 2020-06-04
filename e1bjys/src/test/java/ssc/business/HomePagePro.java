@@ -20,9 +20,17 @@ public class HomePagePro {
     }
 
     /**
-     * 调用登录
+     * 调用 打开登录页面
      */
-    public void clickLoginButton() {
-        homePageHandle.login();
+    public void getLoginPage() {
+        homePageHandle.getLoginPage();
+    }
+
+    /**
+     * 调用 登录系统
+     */
+    public void login(String user, String pass) {
+
+        homePageHandle.login(user,pass);
     }
 }

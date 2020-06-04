@@ -2,6 +2,7 @@ package ssc.testCase;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import ssc.base.DriverBase;
 import ssc.business.*;
@@ -39,7 +40,7 @@ public class Login extends CaseBase {
     }
 
     /**
-     * 打开登录页面
+     * 打开 登录页面
      */
     @Test
     public void testLoginHome(){
@@ -49,14 +50,17 @@ public class Login extends CaseBase {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        homePagePro.clickLoginButton();
+        homePagePro.getLoginPage();
     }
 
     /**
-     * 登录
+     * 执行 登录
      */
-    @Test
-
+    @Test(dependsOnMethods = {"testLoginHome"})
+    @Parameters({"user","pass"})
+    public void login(String user,String pass){
+        homePagePro.login(user,pass);
+    }
 
     /**
      *
