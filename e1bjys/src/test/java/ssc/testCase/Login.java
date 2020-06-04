@@ -28,6 +28,7 @@ public class Login extends CaseBase {
     public void testLogin(){
         this.driver = initdriver();
         driver.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.driver.manage().window().maximize();
         loginpro = new LoginPro(driver);
         homePagePro = new HomePagePro(driver);
         coursePagePro = new CoursePagePro(driver);
@@ -38,7 +39,7 @@ public class Login extends CaseBase {
     }
 
     /**
-     *
+     * 打开登录页面
      */
     @Test
     public void testLoginHome(){
@@ -50,6 +51,12 @@ public class Login extends CaseBase {
         }
         homePagePro.clickLoginButton();
     }
+
+    /**
+     * 登录
+     */
+    @Test
+
 
     /**
      *

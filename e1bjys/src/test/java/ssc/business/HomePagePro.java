@@ -20,8 +20,9 @@ public class HomePagePro {
     }
 
     /**
-     *
+     * 调用登录
      */
     public void clickLoginButton() {
+        homePageHandle.login();
     }
 }
