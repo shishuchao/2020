@@ -11,11 +11,11 @@ import java.util.Properties;
 public class Locator {
     public By by;
     MyProperties properties = new MyProperties("element.properties");
-    ProUtil proUtil = new ProUtil("element.properties");
 
 
     /**
-     *
+     * 接收 key
+     * 返回 By
      */
     public By getLocator(String key){
         String element = properties.getMyProperty(key);
@@ -23,15 +23,15 @@ public class Locator {
         String elementValue = element.split(">")[1];
         if(elementType.equals("id")){
             by = By.id(elementValue);
-        }if(elementType.equals("className")){
+        }else if(elementType.equals("className")){
             by = By.className(elementValue);
-        }if(elementType.equals("tagName")){
+        }else if(elementType.equals("tagName")){
             by = By.tagName(elementValue);
-        }if(elementType.equals("name")){
+        }else if(elementType.equals("name")){
             by = By.name(elementValue);
-        }if(elementType.equals("linkText")){
+        }else if(elementType.equals("linkText")){
             by = By.linkText(elementValue);
-        }if(elementType.equals("xpath")){
+        }else if(elementType.equals("xpath")){
             by = By.xpath(elementValue);
         }else{
             System.out.println("element is invalid");

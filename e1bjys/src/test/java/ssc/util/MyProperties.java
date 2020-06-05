@@ -11,7 +11,7 @@ public class MyProperties extends Properties {
     public String filePath ;
 
     /**
-     *
+     * 直接加载配置文件
      */
     public MyProperties(String filePath){
         try {
@@ -41,11 +41,11 @@ public class MyProperties extends Properties {
     }
 
     /**
-     *
+     * 接收 key
+     * 返回 value
      */
     public String getMyProperty(String key) {
         String value = null;
-
             if (this.containsKey(key)) {
                value = this.getProperty(key);
             }else{
