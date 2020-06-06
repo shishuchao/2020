@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.sql.SQLOutput;
 import java.util.List;
 
 public class ActionSelenium {
@@ -65,6 +66,7 @@ public class ActionSelenium {
             Thread.sleep(1000);
             driver.findElement(By.id("adjust")).click();
 
+
 //           driver.findElement(By.id("datagrid-row-r2-2-0")).click();
 //           Thread.sleep(2000);
 //           driver.findElement(By.id("adjust")).click();
@@ -94,6 +96,9 @@ public class ActionSelenium {
     }
 
 
+    /**
+     *  by.linkText
+     */
     @Test
     public void testGetLinkText(){
         try {
@@ -110,6 +115,25 @@ public class ActionSelenium {
         assert driver.getCurrentUrl() == "http://news.baidu.com";
 
     }
+    @Test
+    public void testTemp(){
+        String s ="asdfghjkl";
+        char[] chars = s.toCharArray();
+
+        for(int i = 0;i<chars.length;i++){
+            for(int j = 0 ;j < i;j++){
+                if(chars[i]<chars[j]){
+                    char temp = chars[i];
+                    chars[i]= chars[j];
+                    chars[j]=temp;
+
+                }
+            }
+
+        }
+
+    }
+
     @AfterClass
     public void testClose(){
         try {
