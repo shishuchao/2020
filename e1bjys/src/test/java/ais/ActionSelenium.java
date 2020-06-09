@@ -1,9 +1,6 @@
 package ais;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -11,6 +8,7 @@ import org.testng.annotations.Test;
 
 import java.sql.SQLOutput;
 import java.util.List;
+import java.util.Set;
 
 public class ActionSelenium {
     public WebDriver driver;
@@ -65,6 +63,29 @@ public class ActionSelenium {
             }
             Thread.sleep(1000);
             driver.findElement(By.id("adjust")).click();
+            Thread.sleep(1000);
+            //driver.findElement(By.tagName("li")).getAttribute("class").equals("tabs-selected");
+            List<WebElement> lis = driver.findElements(By.tagName("li"));
+            System.out.println("begin");
+            for(WebElement li : lis) {
+
+                System.out.println(li.getAttribute("class"));
+                System.out.println(li.findElement(By.className("tabs-title")).getText());
+
+                if(li.getAttribute("class").equals("tabs-selected") && li.findElement(By.className("tabs-title")).getText().equals("预选项目")){
+                    break;
+                }else if(li.getAttribute("class").equals("tabs-selected") && li.findElement(By.className("tabs-title")).getText().equals("基本信息")){
+                    li.findElement(By.className("预选项目")).click();
+                    Thread.sleep(500);
+
+                    break;
+                }
+            }
+            System.out.println("end");
+            WebElement iframe2 = driver.findElement(By.id("yuxuan"));
+            driver.switchTo().frame(iframe2);
+            driver.findElement(By.id("add")).click();
+            Thread.sleep(500);
 
 
 //           driver.findElement(By.id("datagrid-row-r2-2-0")).click();
@@ -94,7 +115,6 @@ public class ActionSelenium {
         }
 
     }
-
 
     /**
      *  by.linkText
@@ -138,7 +158,8 @@ public class ActionSelenium {
     public void testClose(){
         try {
             Thread.sleep(3000);
-            driver.close();
+            driver.quit();
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
