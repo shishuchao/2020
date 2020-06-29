@@ -1,0 +1,14 @@
+
+a,a:visited {color: #405098; text-decoration:none}
+
+body,div {
+scrollbar-base-color: #e6ecf2;
+scrollbar-3dlight-color: #8fa1b3;
+scrollbar-arrow-color: #596c80;
+scrollbar-shadow-color: #e6ecf2;
+scrollbar-highlight-color: #e6ecf2;
+scrollbar-lightshadow-color: #8fa1b3;
+scrollbar-darkshadow-color: #8fa1b3;
+scrollbar-track-color: #f2f9ff;
+scrollbar-face-color: #e6ecf2;
+}

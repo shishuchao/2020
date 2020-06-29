@@ -1,0 +1,53 @@
+.zt {
+	background-image: url(../../images/portal/ycsy_03.gif);
+	background-repeat: repeat-x;
+}
+.name {
+	font-family: "宋体";
+	font-size: 9pt;
+	color: #000000;
+	line-height: normal;
+}
+.line {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #666666;
+	font-family: "宋体";
+	font-size: 9pt;
+	color: #333333;
+	vertical-align: bottom;
+	text-align: left;
+	text-indent: 6px;
+	height: 25px;
+}
+.bloc{
+	font-family: "宋体";
+	font-size: 9pt;
+	color: #333333;
+	vertical-align: bottom;
+	text-align: left;
+	text-indent: 6px;
+	height: 25px;
+}
+.pic {
+	border: 1px solid #333333;
+	height: 145px;
+}
+.gsjs {
+	font-family: "宋体";
+	font-size: 9pt;
+	line-height: 15pt;
+	color: #333333;
+}
+.bq {
+	font-family: "宋体";
+	font-size: 9pt;
+	color: #FFFFFF;
+}
+.input {
+	font-family: "宋体";
+	font-size: 9pt;
+	background-color:#bad0ef;
+	height: 20px;
+	width: 122px;
+}

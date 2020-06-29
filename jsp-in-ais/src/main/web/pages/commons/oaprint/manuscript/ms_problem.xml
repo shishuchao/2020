@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+配置说明：
+此文件是导出底稿时，审计问题信息的输出格式，可根据需要灵活配置
+可使用的变量说明：
+@sequence@         序号，从1开始
+@sort_name@        问题类别名称
+@problem_name@     问题点名称
+@problem_count@    问题发生数，若统计单位为元，小数位保留3位，若是其它单位，为整数
+@problem_unit@     问题统计单位名称
+@problem_grade@    问题定性
+@problem_desc@     问题描述
+
+若需要的描述信息超出以上范围，需修改程序实现
+
+如需要换行，在相应位置用  [huanhang] 标识
+-->
+<ms_problem>
+    @sequence@) 问题类别： @sort_name@ 问题点： @problem_name@ 发生数： @problem_count@ 统计单位： @problem_unit@ 问题定性： @problem_grade@ 问题描述： @problem_desc@
+</ms_problem>

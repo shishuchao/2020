@@ -1,0 +1,134 @@
+@CHARSET "UTF-8";
+
+.repTab {
+	border-collapse: collapse;
+	BORDER-WIDTH: 1px;
+	BORDER-COLOR: #000;
+	BORDER-STYLE: solid;
+	BORDER-RIGHT: #000 0px solid;
+	BORDER-TOP: #000 1px solid;
+	BORDER-LEFT: #000 1px solid;
+	BORDER-BOTTOM: #000 0px solid;
+}
+
+.repTitleTd {
+	FONT-FAMILY: Verdana;
+	vertical-align: middle;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: normal;
+	TEXT-ALIGN: center;
+	LINE-HEIGHT: 16px;
+	BORDER-RIGHT: #000 1px solid;
+	BORDER-TOP: #000 0px solid;
+	BORDER-LEFT: #000 0px solid;
+	BORDER-BOTTOM: #000 1px solid;
+	background-color: #FFF;
+	text-overflow: ellipsis;
+	word-break: keep-all;
+	overflow: hidden;
+}
+
+.repTitleTd1 {
+	FONT-FAMILY: Verdana;
+	vertical-align: middle;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: normal;
+	TEXT-ALIGN: left;
+	LINE-HEIGHT: 16px;
+	BORDER-RIGHT: #000 1px solid;
+	BORDER-TOP: #000 0px solid;
+	BORDER-LEFT: #000 0px solid;
+	BORDER-BOTTOM: #000 1px solid;
+	background-color: #FFF;
+	text-overflow: ellipsis;
+	word-break: keep-all;
+	overflow: hidden;
+}
+
+.contentTd {
+	FONT-FAMILY: Verdana;
+	vertical-align: middle;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: normal;
+	TEXT-ALIGN: center;
+	LINE-HEIGHT: 16px;
+	BORDER-RIGHT: #000 1px solid;
+	BORDER-TOP: #000 0px solid;
+	BORDER-LEFT: #000 0px solid;
+	BORDER-BOTTOM: #000 1px solid;
+	white-space: nowrap;
+}
+
+span {
+	font: 10pt;
+}
+
+label {
+	font-size: 12px;
+}
+
+#titleDiv {
+	text-align: center;
+	font-size: 14px;
+}
+
+.usual {
+	background: #ffffff;
+	color: #111;
+	padding: 0px 0px;
+	width: 97%;
+	border: 0px solid #222;
+	margin: 0px auto;
+}
+
+.usual li {
+	list-style: none;
+	float: left;
+}
+
+.usual ul a {
+	display: block;
+	padding: 6px 10px;
+	text-decoration: none !important;
+	margin: 1px;
+	margin-left: 0;
+	font: 12px;
+	color: #000;
+	background: #ebf3fe;
+}
+
+.usual ul a:hover {
+	color: red;
+}
+
+.usual ul a.selected {
+	margin-bottom: 0;
+	color: #000;
+	background-color: #FFFAFA;
+	border-bottom: 1px solid snow;
+	cursor: default;
+}
+
+.usual div {
+	padding: 10px 10px 8px 10px; *
+	padding-top: 3px; *
+	margin-top: 0px;
+	margin-left: 15px;
+	clear: left;
+	background-color: #FFFAFA;
+	font: 10pt Georgia;
+}
+
+.usual div a {
+	color: #000;
+	font-weight: bold;
+}
+
+.searchDiv {
+	display: none;
+}
+
+strong {
+	font-size: 16px;
+	font-family: fantasy;
+}

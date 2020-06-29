@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	version="2.4">
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/classes/applicationContext*.xml</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>nc.bs.framework.server.WebApplicationStartupHook</listener-class>
+	</listener>
+	<filter>
+		<filter-name>LoggerFilter</filter-name>
+		<filter-class>nc.bs.framework.server.LoggerServletFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>LoggerFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>CommonServletDispatcher</servlet-name>
+		<servlet-class>nc.bs.framework.comn.serv.CommonServletDispatcher</servlet-class>
+		<init-param>
+			<param-name>service</param-name>
+			<param-value>nc.bs.framework.comn.serv.ServiceDispatcher</param-value>
+		</init-param>
+		<load-on-startup>10</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AxisServlet</servlet-name>
+		<servlet-class>org.apache.axis2.transport.http.AxisServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CodeSynServlet</servlet-name>
+		<servlet-class>nc.bs.framework.codesync.CodeSynServlet</servlet-class>
+		<load-on-startup>5</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>NCInvokerServlet</servlet-name>
+		<servlet-class>nc.bs.framework.server.InvokerServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>NCFindWebServlet</servlet-name>
+		<servlet-class>nc.bs.framework.server.FindWebResourceServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>FundarchitectureServlet</servlet-name>
+		<servlet-class>nc.ui.audit.fundarchitecture.FundarchitectureServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FundarchitectureServlet</servlet-name>
+		<url-pattern>/fundarchitectureServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>NCFindWebServlet</servlet-name>
+		<url-pattern>/NCFindWeb</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CommonServletDispatcher</servlet-name>
+		<url-pattern>/ServiceDispatcherServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CodeSynServlet</servlet-name>
+		<url-pattern>/CodeSynServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>NCInvokerServlet</servlet-name>
+		<url-pattern>/service/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>NCInvokerServlet</servlet-name>
+		<url-pattern>/servlet/*</url-pattern>
+	</servlet-mapping>
+
+	<mime-mapping>
+		<extension>xls</extension>
+		<mime-type>application/vnd.ms-excel</mime-type>
+	</mime-mapping>
+
+	<welcome-file-list>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+	
+</web-app>

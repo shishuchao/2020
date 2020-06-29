@@ -1,0 +1,344 @@
+<PUBLIC:COMPONENT>
+<PUBLIC:METHOD name="delAllData" />
+<PUBLIC:METHOD name="getRowsCount" />
+<PUBLIC:METHOD name="addUser" />
+<PUBLIC:METHOD name="addUserResult" />
+<PUBLIC:METHOD name="addObject" />
+<PUBLIC:METHOD name="addProject" />
+<PUBLIC:METHOD name="changeDate" />
+<PUBLIC:METHOD name="getUser"/>
+<PUBLIC:METHOD name="getProject"/>
+<PUBLIC:METHOD name="getbject"/>
+<PUBLIC:EVENT ID="odelrow" name="ondelrow" />
+<PUBLIC:ATTACH EVENT="ondocumentready" ONEVENT="init();" />
+<SCRIPT>
+var objTable;
+var array=new Array();
+var trbgcolor='#ECF1FF';
+var addflag = 0;
+Array.prototype.remove=function(dx)
+{
+   if(isNaN(dx)||dx>this.length){return false;}
+   for(var i=0,n=0;i<this.length;i++)
+   {
+       if(this[i]!=this[dx])
+       {
+           this[n++]=this[i]
+       }
+   }
+   this.length-=1
+}
+//customer
+//addUser(floginname,fname,fdeptname)
+function addUser()
+{
+  var canadd=true;
+  var o=arguments[0].split(",");
+  for (var j=0;j<array.length;j++)
+  {
+    if (array[j]==o[0])
+    {
+      canadd=false;
+      break;
+    }
+  
+  }
+  if (canadd)
+  {
+  objTable.insertRow();
+  array[array.length]=o[0];
+  var rowcount=objTable.rows.length-1;
+  var row=objTable.rows(rowcount);
+  row.runtimeStyle.background=trbgcolor;
+  row.vAlign="bottom";
+  row.id=element.id+"_"+rowcount;
+  row.insertCell();
+  row.insertCell();
+  row.insertCell();
+ 
+  CreatePK(row.cells(0),o[0]);
+  CreateNormalBox(row.cells(1),"\u59D3\u540D",o[1],true);
+ 
+  CreateDelBtn(row.cells(2));
+  }
+  else
+  {
+   
+  }
+
+}
+function addObject()
+{
+    var canadd=true;
+  var o=arguments[0].split(",");
+  for (var j=0;j<array.length;j++)
+  {
+    if (array[j]==o[0])
+    {
+      canadd=false;
+      break;
+    }
+  
+  }
+  if (canadd)
+  {
+  objTable.insertRow();
+  array[array.length]=o[0];
+  var rowcount=objTable.rows.length-1;
+  var row=objTable.rows(rowcount);
+  row.runtimeStyle.background=trbgcolor;
+  row.vAlign="bottom";
+  row.id=element.id+"_"+rowcount;
+  row.insertCell();
+  row.insertCell();
+  row.insertCell();
+ 
+  CreatePK(row.cells(1),o[0]);
+  CreateNormalBox(row.cells(0),"\u767b\u5f55\u540d\u79f0",o[1],true);
+ 
+  CreateDelBtn(row.cells(2));
+  }
+  else
+  {
+   
+  }
+
+}
+function addProject()
+{
+    var canadd=true;
+  var o=arguments[0].split(",");
+  var rowcount=arguments[1];
+  for (var j=0;j<array.length;j++)
+  {
+    if (array[j]==o[0])
+    {
+      canadd=false;
+      break;
+    }
+  
+  }
+  if (canadd)
+  {
+  objTable.insertRow();
+  array[array.length]=o[0];
+  var rowcount=objTable.rows.length-1;
+  var row=objTable.rows(rowcount);
+  row.runtimeStyle.background=trbgcolor;
+  row.vAlign="bottom";
+  row.id=element.id+"_"+rowcount;
+  row.insertCell();
+  row.insertCell();
+  row.insertCell();
+  row.insertCell();
+  row.insertCell();
+ 
+  CreatePK(row.cells(1),o[0]);
+  CreateNormalBox(row.cells(0),"\u9879\u76ee\u540d\u79f0",o[1],true);
+  CreateNormalBox(row.cells(2),"\u542f\u52a8\u65f6\u95f4",o[2],true);
+  CreateNormalBox(row.cells(4),"\u5173\u95ed\u65f6\u95f4",o[3],true);
+ 
+  CreateDelBtn(row.cells(4));
+  }
+  else
+  {
+   
+  }
+}
+function getProject()
+{
+ var rsid="";
+ var rsname="";
+  if (objTable!=null&&objTable.rows!=null)
+  {
+  
+  for (var i=0;i<objTable.rows.length;i++)
+  {
+	 var id=objTable.rows(i).cells(1).children[0];
+    var project_name=objTable.rows(i).cells(0).children[1];
+   if (i<objTable.rows.length-1){
+   	rsid+=id.value+",";
+  	rsname+=project_name.value+",";
+  	}
+   else{
+    rsid+=id.value;
+  rsname+=project_name.value;
+   }
+  }
+  }
+  var array=new Array();
+   array[0]=rsid;
+  array[1]=rsname;
+  return array;
+}
+function getUser()
+{
+ var rsid="";
+ var rsname="";
+  if (objTable!=null&&objTable.rows!=null)
+  {
+  
+  for (var i=0;i<objTable.rows.length;i++)
+  {
+   var uesrid=objTable.rows(i).cells(0).children[0];
+   var loginname=objTable.rows(i).cells(1).children[1];
+   if (i<objTable.rows.length-1){
+   	rsname+=loginname.value+",";
+  	rsid+=uesrid.value+",";
+  	}
+   else{
+    rsname+=loginname.value;
+    rsid+=uesrid.value;
+   }
+  }
+  }
+  var array=new Array();
+  array[0]=rsid;
+  array[1]=rsname;
+  return array;
+}
+function getObject()
+{
+ var rsid="";
+ var rsname="";
+  if (objTable!=null&&objTable.rows!=null)
+  {
+  
+  for (var i=0;i<objTable.rows.length;i++)
+  {
+   var id=objTable.rows(i).cells(1).children[0];
+   var name=objTable.rows(i).cells(0).children[1];
+   if (i<objTable.rows.length-1){
+   	rsid+=id.value+",";
+  	rsname+=name.value+",";
+  	}
+   else{
+    rsid+=id.value;
+  rsname+=name.value;
+   }
+  }
+  }
+  var array=new Array();
+  array[0]=rsid;
+  array[1]=rsname;
+  return array;
+}
+
+
+
+
+
+//system
+function init()
+{
+ objTable=document.createElement("TABLE");
+ objTable.border =0;
+ objTable.cellSpacing =1;
+ objTable.cellPadding =3;
+ objTable.runtimeStyle.borderStyle = 'solid';
+ objTable.runtimeStyle.borderCollapse = 'separate';
+ objTable.runtimeStyle.borderWidth = '1px';
+ objTable.runtimeStyle.borderColor = '#24b4d8';
+ element.appendChild(objTable); 
+
+}
+
+function getRowsCount()
+{
+ return objTable.rows.length;
+}
+
+function delAllData()
+{
+  array=new Array();
+  for (var i=objTable.rows.length-1;i>=0;i--)
+  {
+     objTable.deleteRow(i);
+  }
+  
+}
+function CreateNormalBox(cell,cn_name,arg,isreadonly)
+{
+  var count=document.createElement("input");
+  count.type="text";
+  count.readOnly=isreadonly;
+  count.value=arg;
+  count.size=10;
+  var countname=document.createElement("font");
+  countname.innerHTML=cn_name+": ";
+  cell.appendChild(countname);
+  cell.appendChild(count);
+
+}
+function CreateNormalText(cell,cn_name,arg)
+{
+  var span=document.createElement("span");
+  span.innerHTML=arg;
+  span.size=30;
+  var proname=document.createElement("font");
+  proname.innerHTML=cn_name+": ";
+  cell.appendChild(proname);
+  cell.appendChild(span);
+}
+
+
+function CreateDelBtn(cell)
+{
+  var del=document.createElement("input");
+  del.type="button";
+  del.value="\u5220\u9664";
+  del.attachEvent("onclick",delOppRow);
+  cell.appendChild(del);
+}
+//id key
+function CreatePK(cell,arg)
+{
+  var hiddenid=document.createElement("input");
+  hiddenid.type="hidden";
+  hiddenid.value=arg;
+  cell.appendChild(hiddenid);
+}
+
+
+
+function delOppRow()
+{
+   if (confirm("\u786e\u8ba4\u8981\u5220\u9664\u5417\uff1f"))
+   {
+   var row=event.srcElement.parentElement.parentElement;
+   var id=row.rowIndex;
+   var pk=row.cells(1).children[0].value;   
+   for (var i=0;i<array.length;i++)
+   {
+     if (array[i]==pk)
+     {
+       array.remove(i);
+       break;
+     }
+   }
+   
+
+   objTable.deleteRow(id);
+   var e=createEventObject();
+   odelrow.fire(e);
+  
+   }
+}
+
+function CreateBoxWEvent(cell,cn_name,arg,isreadonly,size,event)
+{
+  var count=document.createElement("input");
+  count.type="text";
+  count.readOnly=isreadonly;
+  count.value=arg;
+  count.size=size;
+  count.attachEvent("onkeyup",event);
+  count.attachEvent("onfocus",getFocus);
+   var countname=document.createElement("font");
+  countname.innerHTML=cn_name+"£º";
+  cell.appendChild(countname);
+  cell.appendChild(count);
+}
+         
+</SCRIPT>
+</PUBLIC:COMPONENT>

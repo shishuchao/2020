@@ -1,0 +1,124 @@
+ .rowTrover:hover{
+	background-color:rgba(170, 227, 250, 1);
+ }
+ 
+ .auditwtTable td{
+ 	border-width:0 1px 1px 0;
+ 	border-style: dotted;
+ 	border-color:#8000ff;
+ } 
+ 
+ .auditwtTable{
+ 	width:80%;
+ 	height:100%;
+ 	margin-left:10%; 
+ }   
+ 
+ .container-fluid{
+    padding:0px;
+    margin:0px;
+    height:180px;
+    overflow:hidden;
+ }
+ 
+ .container-flu2id{ 
+     padding:0px;
+     margin:0px;
+     height:150px;
+     overflow:hidden;
+ }
+  
+ .easyui-layout{
+   margin:0;
+   padding:0;
+   overflow:hidden;
+ }
+ 
+/* Table Style */
+ .tbTitle{
+    width:4%;
+    text-align:center;
+ }
+ 
+ .tbTitle2{
+    width:2%;
+    text-align:center;
+ } 
+ 
+ .tbTitle5{
+    width:5%;
+    text-align:center;
+ }
+ 
+ .tbTitle8{
+    width:8%;
+    text-align:center;
+ }
+ 
+ .tbTitle10{
+    width:10%;
+    text-align:center;
+ }
+ 
+ .editqhead1{
+    width:7%;
+ }
+ 
+ .editqhead2{
+    width:9%;
+ }
+ 
+ .Td{
+    width:16%;
+ }
+ 
+  .Td2{
+    width:30%;
+ }
+ 
+ .questiontr{
+    font-size:15px; 
+    text-align:center; 
+    font-weight:bold; 
+    color:gray;
+ }
+ 
+ /* search Style */ 
+ .searchquestionstable{
+    width:100%;
+    border-collapse:separate; 
+    border-spacing:0px 7px;
+ }
+
+ .searchdimension{
+	margin-left:3%; 
+	width:80%;
+	float:left;
+	margin-top: 5px; 
+ } 
+
+ .searchquerstion{
+    margin-top:20px;
+	width:100%;
+ }
+ 
+ /* order Style */
+ .questionorder{ 
+	cursor:pointer;
+	float:left;
+	margin-right:1%;
+	margin-top:10px"
+ }	  
+  
+ .spanstb{
+    color:red;
+    margin-left:10%  
+ }
+ 
+ .chartcss{
+    height:500px;
+    width:80%;
+    margin-left:10%;
+ }
+ 
+ 

@@ -1,0 +1,58 @@
+<public:component>
+<public:attach event="oncontentready" onevent="changeStyle()" />
+
+<script language="JScript">
+function changeStyle() {
+    if (element.tagName != "INPUT") return;
+
+    if (element.type == "button" || element.type == "submit") {
+        element.style.height = "14pt";
+        element.style.border = "1pt solid #99cccc";
+        //element.style.background = "#99cccc url(/ais/styles/main/bg_btn.gif)";
+        element.style.background = "#eeeeee";
+
+        attachEvent('onmouseout', buttonOut);
+        attachEvent('onmouseover', buttonOver);
+        return;
+    }
+
+    if (element.type == "text") {
+        element.style.border = "1pt solid #99cccc";
+        return;
+    }
+
+    if (element.type == "checkbox") {
+        element.style.border = "0";
+        return;
+    }
+
+ /*   if (element.type == "file") {
+        element.style.border = "1pt solid #99cccc";
+
+        window.alert ("changeStyle"
+                      + "\r\n tagName: " + element.tagName
+                      + "\r\n type: " + element.type
+                      + "\r\n name: " + element.name
+                      + "\r\n value: " + element.value
+                      + "\r\n parentElement: " + element.parentElement.tagName
+                      );
+
+        return;
+    }
+    */
+}
+
+function buttonOver(){
+    //if (!disabled) {
+        //style.borderColor = "darkcyan";
+        //style.backgroundColor = "#336666";
+    //}
+}
+
+function buttonOut(){
+    //style.borderColor = "#99cccc";
+    //style.backgroundColor = "#99cccc";
+}
+</script>
+
+</public:component>

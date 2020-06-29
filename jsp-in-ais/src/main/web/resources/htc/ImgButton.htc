@@ -1,0 +1,196 @@
+<!--
+文件名: ImgButton.htc
+名称：  图片文字混合按扭
+作者：  杜胜
+版本：  1.0.1         
+创建时间：  2003年12月
+最后修改时间: 2004年2月
+备注：  无
+例子：
+//-->
+<PUBLIC: COMPONENT>
+<PUBLIC:PROPERTY name="Text" value=""/>
+<PUBLIC:PROPERTY name="Imgsrc" value=""/>
+<PUBLIC:PROPERTY name="ClickOnce" value="FALSE"/>
+<PUBLIC:PROPERTY name="Background" value="#CCDBF2"/>
+
+<PUBLIC:ATTACH EVENT="ondocumentready" ONEVENT="init();" />
+<SCRIPT>
+function init()
+{
+     
+     setupStyles();
+     var objTable = document.createElement("TABLE");
+     
+     objTable.width=getTabWidth();
+     objTable.vAlign="top";
+     objTable.hight="25";
+     objTable.border =0;
+     objTable.runtimeStyle.background=Background;
+     objTable.id=element.id+"_imgtab";
+     objTable.cellSpacing =1;
+     objTable.cellPadding =1;
+     objTable.className="tabstyle"+element.id;
+     
+     if (!element.disabled)
+     objTable.runtimeStyle.cursor="hand";
+     
+     var oRow=objTable.insertRow();
+
+     //创建输入选取框
+     //oRow=objTable.rows(0);
+     
+     oRow.vAlign='top';
+     oRow.insertCell();
+     oRow.insertCell();
+     oRow.insertCell();
+     
+
+     oRow.cells(0).width=2;
+     oRow.cells(1).appendChild(CreateImg());
+     
+     var subtab=document.createElement("TABLE");
+     subtab.vAlign="top";
+     subtab.insertRow();
+     subtab.insertRow();
+     subtab.cellSpacing =0;
+     subtab.cellPadding =0;
+     subtab.rows(0).insertCell();
+     subtab.rows(0).cells(0).height=3;
+     subtab.rows(1).insertCell();
+     subtab.rows(1).cells(0).appendChild(CreateText());
+     oRow.cells(2).appendChild(subtab);
+    
+
+     if (!element.disabled){
+     objTable.attachEvent("onmouseover",overbutton);
+     objTable.attachEvent("onmouseout",outbutton);
+     objTable.attachEvent("onmousedown",downbutton);
+     objTable.attachEvent("onmouseup",upbutton);
+      }
+      else
+      {
+       element.onclick=null;
+      }
+
+     element.innerHTML="";
+     if (ClickOnce.toLowerCase()=="true")
+     element.attachEvent("onclick",showclicked);
+     
+     element.appendChild(objTable);
+
+    
+}
+
+function showclicked()
+{
+   element.disabled=true;
+   element.onclick=null;
+   var tab=element.document.getElementById(element.id+"_imgtab");
+   tab.runtimeStyle.cursor="";
+   tab.detachEvent("onmouseover",overbutton);
+   tab.detachEvent("onmouseout",outbutton);
+   tab.detachEvent("onmousedown",downbutton);
+   tab.detachEvent("onmouseup",upbutton);
+}
+
+function CloseButton()
+{}
+
+function downbutton()
+{
+   var tab=element.document.getElementById(element.id+"_imgtab");
+   tab.runtimeStyle.borderLeftColor="#919191";
+   tab.runtimeStyle.borderTopColor="#919191";
+   tab.runtimeStyle.borderRightColor="#ffffff";
+   tab.runtimeStyle.borderBottomColor="#ffffff";
+}
+
+function upbutton()
+{
+    var tab=element.document.getElementById(element.id+"_imgtab");
+    tab.runtimeStyle.borderLeftColor="#ffffff";
+   tab.runtimeStyle.borderTopColor="#ffffff";
+   tab.runtimeStyle.borderRightColor="#919191";
+   tab.runtimeStyle.borderBottomColor="#919191";
+}
+
+function getTabWidth()
+{
+   var width=18;
+   var length=strlength(Text);
+   if (length<5)
+   {
+     width=width+length*10;
+   }
+   else
+   {
+     width=width+length*8;
+   }
+
+   return width;
+}
+
+
+function strlength(str)
+{
+    var l=str.length;
+    var n=l
+    for (var i=0;i<l;i++)
+    {
+        if (str.charCodeAt(i)<0||str.charCodeAt(i)>255) n++
+    }
+    return n
+}
+
+function overbutton()
+{
+      var tab=element.document.getElementById(element.id+"_imgtab");
+      tab.runtimeStyle.background="#FFFFE7";
+}
+
+function outbutton()
+{      
+      var tab=element.document.getElementById(element.id+"_imgtab");
+      tab.runtimeStyle.background=Background;
+}
+
+function ClickButton()
+{
+    var e=createEventObject();
+    oclick.fire(e);
+}
+
+function CreateImg()
+{
+   var img=document.createElement("img");
+   img.width=16;
+   img.height=16;
+   img.border=0;
+   img.src=Imgsrc;
+   return img;
+   
+}
+
+function CreateText()
+{
+   var text=document.createElement("span");
+   text.style.fontSize="9pt";
+   text.innerHTML=Text;
+   return text;
+}
+
+function setupStyles() {
+   var oSheet = window.document.createStyleSheet();
+   oSheet.addRule(".divstyle" + element.id,"BACKGROUND-COLOR:#DEE7FF;overflow:no;Z-Index:1;position:absolute;scrollbar-Face-Color:#D6E7FF;scrollbar-Highlight-Color:#FFFFFF;");
+   oSheet.addRule(".inputstyle"+element.id,"FONT-SIZE:9pt;FONT-FAMILY: 宋体;background-color:white; BORDER-BOTTOM-WIDTH:0px;BORDER-RIGHT-WIDTH:0px;BORDER-TOP-WIDTH:0px;BORDER-LEFT-WIDTH:0px; FONT-SIZE: 9pt ;FONT-FAMILY: 宋体;");
+   oSheet.addRule(".tabstyle" + element.id,"BORDER-TOP:1px #ffffff solid;" +
+			"BORDER-LEFT:1px #ffffff solid;" +
+			"BORDER-RIGHT:1px #919191 solid;" +
+			"BORDER-BOTTOM:1px #919191 solid;");
+   oSheet.addRule(".area"+element.id,"FONT-SIZE: 9pt ;FONT-FAMILY: 宋体;BORDER-BOTTOM: 1px solid #7F9DB9;BORDER-LEFT:1px solid #7F9DB9;BORDER-RIGHT:1px solid #7F9DB9;BORDER-TOP:1px solid #7F9DB9; HEIGHT: 84px; OVERFLOW: auto; WIDTH: 135px");
+  
+}
+
+</SCRIPT>
+</PUBLIC: COMPONENT>

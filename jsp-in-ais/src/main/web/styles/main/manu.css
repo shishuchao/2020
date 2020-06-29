@@ -1,0 +1,43 @@
+/*提示层的样式*/
+ 
+
+/*tr的样式*/
+tr {
+	font-family: "宋体";
+	color: #000000;
+	background-color: #C1DBF5;
+	font-size: 12px
+}
+
+/*table脚注样式*/
+.TrFoot {
+	FONT-SIZE: 12px;
+	font-family: "宋体", "Verdana", "Arial";
+	BACKGROUND-COLOR: #6699CC;
+	COLOR: #FFFFFF;
+	height: 25;
+}
+
+/*trhead属性*/
+.TrHead {
+	FONT-SIZE: 13px;
+	font-family: "宋体", "Verdana", "Arial";
+	BACKGROUND-COLOR: #77AADD;
+	COLOR: #FFFFFF;
+	height: 25;
+}
+
+ 
+
+/*button样式*/
+button {
+	BORDER-COLOR: #AACEF7 #AACEF7 #AACEF7 #AACEF7;
+	BACKGROUND-COLOR: #D5E4F3;
+	CURSOR: hand;
+	FONT-SIZE: 12px;
+	BORDER-RIGHT: 1px solid;
+	BORDER-TOP: 1px solid;
+	BORDER-LEFT: 1px solid;
+	BORDER-BOTTOM: 1px solid;
+	COLOR: #000000;
+}

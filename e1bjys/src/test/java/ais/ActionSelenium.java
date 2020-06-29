@@ -1,18 +1,28 @@
 package ais;
 
+import com.mushishi.selenium.base.DriverBase;
+import com.sun.xml.internal.ws.addressing.model.ActionNotSupportedException;
+import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 import java.sql.DatabaseMetaData;
 import java.sql.SQLOutput;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.List;
 
 public class ActionSelenium {
-    public WebDriver driver;
+    WebDriver driver;
+    static Logger logger = Logger.getLogger(ActionSelenium.class);
+    SSCUtils utils ;
 
 
     @BeforeClass
@@ -27,10 +37,18 @@ public class ActionSelenium {
             Thread.sleep(2000);
             driver.findElement(By.id("j_username")).sendKeys("shiscsj");
             driver.findElement(By.id("j_password")).sendKeys("123");
+
+            utils = new SSCUtils(driver);
+            utils.screenShot("testLogin");
+            // ---- ----
+
+            // ---- ----
             Thread.sleep(1000);
             driver.findElement(By.id("loginSubmit")).click();
             Thread.sleep(1000);
         } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -43,9 +61,9 @@ public class ActionSelenium {
             driver.get("http://10.2.112.21:30302/ais/portal/simple/http/ais//portal/simple/simple-firstPageAction!menu.action?parentMenuId=10");
             Thread.sleep(2000);
             driver.findElement(By.id("menu1010")).click();
-            Thread.sleep(500);
+            Thread.sleep(3000);
             driver.findElement(By.id("_easyui_tree_3")).click();
-            Thread.sleep(1000);
+            Thread.sleep(2000);
 
             WebElement iframe = driver.findElement(By.id("101050id"));
             driver.switchTo().frame(iframe);
@@ -149,7 +167,7 @@ public class ActionSelenium {
             System.out.println("进入预选项目新增表单");
 
             // 月份 下拉单选框
-            System.out.println("月份");
+            System.out.println("    月份");
 //            String aClass = driver.findElement(By.xpath("//*[@id=\"w_plan_month\"]/..")).getAttribute("class");
 //            System.out.println(aClass);
             List<WebElement> spans1 = driver.findElements(By.className("textbox-addon"));
@@ -160,10 +178,11 @@ public class ActionSelenium {
             Thread.sleep(500);
 
             // 审计单位 单选
-            System.out.println("审计单位");
+            System.out.println("    审计单位");
+//            WebElement auditDepartmentWindow = driver.findElement(By.xpath("/html/body/div[18]"));
 
             // 项目类型 iframe
-            System.out.println("项目类型");
+            System.out.println("    项目类型");
             List<WebElement> imgs = driver.findElements(By.tagName("img"));
             for(WebElement img : imgs ){
                 String onclick = img.getAttribute("onclick").substring(0, 7);
@@ -191,11 +210,30 @@ public class ActionSelenium {
             }
 
             //被审计单位 多选
-            System.out.println("被审计单位");
+            System.out.println("    被审计单位");
+            WebElement tr = driver.findElement(By.xpath("//*[\"@id=planTable\"]/tbody/tr[4]"));
+            tr.findElement(By.tagName("img")).click();
+            System.out.println("        "+driver.findElement(By.xpath("/html/body/div[14]")).getAttribute("class"));
 
+            WebElement div = driver.findElement(By.xpath("/html/body/div[15]"));
+            System.out.println(div.getAttribute("class"));
+            List<WebElement> uls = div.findElements(By.tagName("ul"));
+            for(WebElement ul : uls){
+                System.out.println(ul.getAttribute("id"));
+                if (ul.getAttribute("id").length() > 7 && ul.getAttribute("id").subSequence(0, 7).equals("jqTree_")) {
+                    System.out.println(ul.findElement(By.xpath("./li/div/span[3]")).getAttribute("class"));
+                    ul.findElement(By.xpath("./li/div/span[3]")).click();
+                }
+            }
+
+            WebElement span3 = div.findElement(By.xpath("./div[2]/div[2]/div[2]/button[1]/span/span[1]"));
+            System.out.println(span3.getText());
+            span3.click();
+            Thread.sleep(3000);
+            System.out.println("    被审计单位结束");
 
             // 计划等级 下拉框 单选
-            System.out.println("计划等级");
+            System.out.println("    计划等级");
             spans1.get(1).click();
             Thread.sleep(500);
             //  (int)(Math.random()*100）+1    返回1到100之间的随机整数，前面返回0到99之间的随机数，加1就成了1到100之间的随机数。
@@ -207,12 +245,12 @@ public class ActionSelenium {
             // 默认勾选 “自主审计”，待 “全外包”时，再定位
 
             // 项目名称
-            System.out.println("项目名称");
+            System.out.println("    项目名称");
             Date date = new Date();
             SimpleDateFormat format = new SimpleDateFormat("yyMMdd-hhmmss");
             driver.findElement(By.id("w_plan_name")).sendKeys(format.format(date)+"石树超");
 
-            //时间处理
+            // 时间处理
 //            String js = "$('input:eq(0)').attr('readonly',false)";
 //            JavascriptExecutor jsExecutor = (JavascriptExecutor)driver;
 //            jsExecutor.executeScript(js);
@@ -220,7 +258,7 @@ public class ActionSelenium {
             SSCUtils utils = new SSCUtils(driver);
 
             // 项目开始时间
-            System.out.println("几个时间");
+            System.out.println("    几个时间");
             //driver.findElement(By.id("pro_starttime")).click();
             spans1.get(3).click();
             utils.dateWidget(divs,0);
@@ -253,8 +291,7 @@ public class ActionSelenium {
             driver.findElement(By.id("plan_remark")).sendKeys(format.format(date)+"石树超 "+" 备注");
 
             // 上传附件
-            // By.id("fujian")
-            System.out.println("上传附件");
+            System.out.println("    上传附件");
             List<WebElement> fujians = driver.findElement(By.id("fujian")).findElements(By.className("l-btn-text"));
             for(WebElement fujian : fujians){
                 System.out.println(fujian.getText());
@@ -263,22 +300,63 @@ public class ActionSelenium {
                     break;
                 }
             }
-            driver.switchTo().parentFrame();
-            driver.findElement(By.className("icon-addFile")).click();
-//todo
-            //driver.findElement(By.className("icon-addFile")).sendKeys("C:\\Users\\19381\\Desktop\\科目说明.docx");
 
-            // 保存
-            WebElement saveButton = driver.findElement(By.id("saveButton"));
-            List<WebElement> spans2 = saveButton.findElements(By.tagName("span"));
-            for(WebElement span2 : spans2){
-                System.out.println(span2.getText());
+//            driver.switchTo().parentFrame();  不是父节点的iframe，是跳出iframe
+            driver.switchTo().defaultContent();
+//            driver.findElement(By.className("icon-addFile")).sendKeys("C:\\Users\\19381\\Desktop\\科目说明.docx");
+//            赋值变量，一次循环就可以操作两个步骤，添加文件 + 点击上传
+            List<WebElement> addFiles = driver.findElements(By.className("icon-addFile"));
+            WebElement divAddFile = null;
+            WebElement inputAddFile = null;
+            for(WebElement addFile : addFiles){
+                System.out.println(addFile.getTagName());
+                if(addFile.getTagName().equals("input")){
+                    inputAddFile = addFile;
+                }else if(addFile.getTagName().equals("div")){
+                    divAddFile = addFile;
+                }
             }
 
+            inputAddFile.sendKeys("C:\\Users\\19381\\Desktop\\Jenkins.png");
+            divAddFile = divAddFile.findElement(By.xpath("../.."));
+            List<WebElement> spans2 = divAddFile.findElements(By.tagName("span"));
+            for(WebElement span : spans2){
+                if(span.getText().equals("上传")){
+                    span.click();
+                    break;
+                }
+            }
             Thread.sleep(500);
+
+
+            // 保存
+            driver.switchTo().frame(iframe);
+            System.out.println("    保存");
+            WebElement saveButton = driver.findElement(By.id("saveButton"));
+            List<WebElement> spans3 = saveButton.findElements(By.tagName("span"));
+            for(WebElement span2 : spans3){
+                System.out.println(span2.getText());
+            }
+            saveButton.click();
+
+            // 退出
+            driver.switchTo().defaultContent();
+            System.out.println("    退出");
+            List<WebElement> divs1 = driver.findElements(By.xpath("//*[@id=\"mainLayout\"]/div"));
+            for(WebElement div1 : divs1){
+                System.out.println(div1.getAttribute("class"));
+            }
+
+            driver.findElement(By.xpath("//*[@id=\"mainLayout\"]/div[19]/div[1]/div[3]/a[2]")).click();
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void testLaunchProject(){
+
     }
 
 
@@ -306,9 +384,56 @@ public class ActionSelenium {
         assert driver.getCurrentUrl().equals( "http://news.baidu.com");
 
     }
-    @Test
-    public void testTemp(){
 
+    @Test(dependsOnMethods = {"testLogin","testModifyPlan"})
+    public void testTemp(){
+        try{
+            driver.switchTo().defaultContent();
+            Thread.sleep(500);
+            WebElement iframe = driver.findElement(By.xpath("//*[@id=\"mainLayout\"]/div[22]/div[2]/iframe"));
+            Thread.sleep(2000);
+
+            driver.switchTo().frame(iframe);
+
+            //被审计单位 多选
+            System.out.println("    被审计单位");
+//            driver.findElement(By.id("planTable")).findElement(By.xpath("/tbody/tr[3]")).findElement(By.tagName("img")).click();
+//            WebElement planTable = driver.findElement(By.id("planTable"));
+            WebElement tr = driver.findElement(By.xpath("//*[\"@id=planTable\"]/tbody/tr[4]"));
+            tr.findElement(By.tagName("img")).click();
+//            List<WebElement> trs = planTable.findElements(By.xpath("/tbody/tr"));
+//            System.out.println("size  "+trs.size());
+//            for(WebElement tr : trs){
+//                System.out.println("tagname  "+tr.getTagName());
+//            }
+
+//            List<WebElement> divs = driver.findElements(By.xpath("/html/body/div"));
+//            for(WebElement div : divs){
+//                System.out.println("        "+div.getAttribute("class"));
+//            }
+            System.out.println("        "+driver.findElement(By.xpath("/html/body/div[14]")).getAttribute("class"));
+
+            WebElement div = driver.findElement(By.xpath("/html/body/div[14]"));
+            List<WebElement> uls = div.findElements(By.tagName("ul"));
+            for(WebElement ul : uls){
+                System.out.println(ul.getAttribute("id"));
+                if (ul.getAttribute("id").length() > 7 && ul.getAttribute("id").subSequence(0, 7).equals("jqTree_")) {
+                    System.out.println(ul.findElement(By.xpath("./li/div/span[3]")).getAttribute("class"));
+//                    ul.findElement(By.xpath("./li/div/span[3]")).getAttribute("class").
+//                            replace("tree-checkbox tree-checkbox0", "tree-checkbox tree-checkbox1");
+
+                    ul.findElement(By.xpath("./li/div/span[3]")).click();
+                }
+            }
+
+            WebElement span = div.findElement(By.xpath("./div[2]/div[2]/div[2]/button[1]/span/span[1]"));
+//            System.out.println(span.getText());
+            span.click();
+            Thread.sleep(3000);
+        System.out.println("    被审计单位结束");
+        } catch (Exception e ){
+            e.printStackTrace();
+        }
 
     }
 

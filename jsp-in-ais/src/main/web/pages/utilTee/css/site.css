@@ -1,0 +1,32 @@
+BODY {
+    font-family: 宋体;
+	font-size: 12px;
+	color: #000000;
+	
+}
+#id1{width:100%;height:100%;background-color:#000;position:absolute;top:0;left:0;z-index:49;display:none;  filter:progid:DXImageTransform.Microsoft.Alphaopacity=25;
+}
+#id2{top:200px;position:absolute;z-index:50;display:none;border:3px solid #E5E5E5; left:100px;background-color:white;}
+.maxfont{font-family: 宋体;	font-size:14px;}
+A:link {color: #004284;TEXT-DECORATION:none}
+A:visited {COLOR: #004284;TEXT-DECORATION:none}
+A:hover {COLOR: #ff3300;TEXT-DECORATION:none}
+A{
+    font-size:12px;
+}
+.tabpanel{BORDER-RIGHT: #7F9DB9 1px solid; BORDER-TOP: #7F9DB9 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #7F9DB9 1px solid;  COLOR: #000000; BORDER-BOTTOM: #7F9DB9 1px solid; BACKGROUND-COLOR: #ffffff;}
+.tdpanel{BORDER-RIGHT: #7F9DB9 1px solid; FONT-SIZE: 12px;COLOR: #000000; BORDER-BOTTOM: #7F9DB9 1px solid; BACKGROUND-COLOR: #DEE7FF;}
+
+.logintype{BORDER-RIGHT: #aeaeae 1px solid; BORDER-TOP: #aeaeae 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 110px; COLOR: #666666; BORDER-BOTTOM: #aeaeae 1px solid; BACKGROUND-COLOR: #ffffff}
+.textarea{BORDER-RIGHT: #aeaeae 1px solid; BORDER-TOP: #aeaeae 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #aeaeae 1px solid; COLOR: #666666; BORDER-BOTTOM: #aeaeae 1px solid; BACKGROUND-COLOR: #ffffff}
+INPUT{BORDER-RIGHT: #7F9DB9 1px solid; BORDER-TOP: #7F9DB9 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #7F9DB9 1px solid;  COLOR: #000000; BORDER-BOTTOM: #7F9DB9 1px solid; BACKGROUND-COLOR: #ffffff;}
+TEXTAREA{BORDER-RIGHT: #7F9DB9 1px solid; BORDER-TOP: #7F9DB9 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #7F9DB9 1px solid;  COLOR: #000000; BORDER-BOTTOM: #7F9DB9 1px solid; BACKGROUND-COLOR: #ffffff;}
+TD{font-family: 宋体; font-size: 12px;}
+TH{font-family: 宋体; font-size: 12px;font-weight: normal;}
+IMG{vertical-align:middle;}
+v\:* {behavior: url(#default#VML);}
+.treeview{behavior: url(/ais/resources/htc/TreeView.htc)}
+.treeviewccic{behavior: url(/ais/resources/htc/TreeViewccic.htc)}
+.imgbtn{behavior: url(/ais/resources/htc/ImgButton.htc)}
+.datalist{behavior: url(/ais/resources/htc/datalist.htc)}
+.duallist{behavior: url(/ais/resources/htc/DualList.htc)}

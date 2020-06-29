@@ -1,0 +1,157 @@
+<!--<!DOCTYPE HTML>-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>月度计划</title>
+		<link href="E:/IDEA2/ais/web/styles/main/ais.css" rel="stylesheet" type="text/css" />
+		<link href="E:/IDEA2/ais/web/resources/csswin/subModal.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="E:/IDEA2/ais/web/scripts/ais_functions.js"></script>
+		<script type="text/javascript" src="E:/IDEA2/ais/web/resources/csswin/common.js"></script>
+		<script type="text/javascript" src="E:/IDEA2/ais/web/resources/csswin/subModal.js"></script>
+		<script type="text/javascript" src="E:/IDEA2/ais/web/scripts/check.js"></script>
+		<script type="text/javascript" src="E:/IDEA2/ais/web/scripts/calendar.js"></script>
+		<script type='text/javascript' src='E:/IDEA2/ais/web/scripts/dwr/DWRActionUtil.js'></script>
+		<script type='text/javascript' src='E:/IDEA2/ais/web/dwr/interface/DWRAction.js'></script>
+		<script type='text/javascript' src='E:/IDEA2/ais/web/dwr/engine.js'></script>
+		<script type='text/javascript' src='E:/IDEA2/ais/web/scripts/turnPage.js'></script>
+		<script type="text/javascript" src="E:/IDEA2/ais/web/scripts/ufaudTextLengthValidator.js"></script>
+	</head>
+	<body>
+		<table id="planTable" cellpadding=0 cellspacing=1 border=0 bgcolor="#409cce" class="ListTable" align="center">
+			<tr id="planCodeDiv1" class="listtablehead" style="width: ;" >
+				<td colspan="4" align="left" class="edithead">
+					&nbsp;月度计划信息
+				</td>
+			</tr>
+			<tr>
+				<td class="ListTableTr11">
+					计划状态：
+				</td>
+				<td class="ListTableTr22">
+					<s:property value="crudObject.status_name" />
+					<s:hidden name="crudObject.status_name" />
+					<s:hidden name="crudObject.status" />
+				</td>
+				<td class="ListTableTr11" nowrap>
+					月度计划编号：
+				</td>
+				<td class="ListTableTr22" id="planCodeDiv">
+					<s:property value="crudObject.w_plan_code" />
+				</td>
+			</tr>
+			<tr>
+				<td class="ListTableTr11">
+					计划年度：
+				</td>
+				<td class="ListTableTr22">
+					<s:select 
+						list="@ais.framework.util.DateUtil@getIncrementYearList(0,10)"
+						name="crudObject.w_plan_year" theme="ufaud_simple"
+						templateDir="/strutsTemplate" disabled="true" />
+				</td>
+				<td align="left" class="listtabletr11">
+					<font color=red>*</font>
+					计划月度：
+				</td>
+				<td align="left" class="listtabletr22">
+					<s:select id="w_plan_month"
+						list="{'1','2','3','4','5','6','7','8','9','10','11','12'}"
+						name="crudObject.w_plan_month"
+						disabled="!(varMap['w_plan_monthWrite']==null?true:varMap['w_plan_monthWrite'])"
+						display="${varMap['w_plan_monthRead']}" theme="ufaud_simple"
+						templateDir="/strutsTemplate" onchange="getPlanCode()" emptyOption="true"/>
+				</td>
+			</tr>
+			<tr>
+				<td class="ListTableTr11" nowrap>
+					<font color=red>*</font>
+					计划名称：
+				</td>
+				<td class="ListTableTr22" colspan="3">
+					<s:textfield name="crudObject.w_plan_name" 
+						readonly="!(varMap['w_plan_nameWrite']==null?true:varMap['w_plan_nameWrite'])"
+						display="${varMap['w_plan_nameRead']}" cssStyle="width:90%" title="计划名称" maxlength="255"/>
+				</td>
+			</tr>
+			<tr>
+				<td class="ListTableTr11" nowrap>
+					<font color=red>*</font>
+					计划单位：
+				</td>
+				<td class="ListTableTr22">
+					<s:buttonText2 id="audit_dept_name" name="crudObject.audit_dept_name" cssStyle="width:90%"
+						hiddenId="audit_dept" hiddenName="crudObject.audit_dept"
+						doubleOnclick="showPopWin('${pageContext.request.contextPath}/pages/system/search/searchdata.jsp?url=${pageContext.request.contextPath}/systemnew/orgList.action&p_item=1&orgtype=1&paraname=crudObject.audit_dept_name&paraid=crudObject.audit_dept&funname=auditDeptChange()',600,350,'组织机构选择')"
+						doubleSrc="${pageContext.request.contextPath}/resources/images/s_search.gif"
+						doubleCssStyle="cursor:hand;border:0"
+						readonly="true"
+						display="${varMap['audit_deptRead']}"
+						doubleDisabled="!(varMap['audit_deptWrite']==null?true:varMap['audit_deptWrite'])" />
+				</td>
+				<td class="ListTableTr11"  nowrap>
+					<font color=red>*</font>
+					负责人：
+				</td>
+				<td class="ListTableTr22">
+					<s:buttonText2 id="w_charge_person_name"
+						name="crudObject.w_charge_person_name" cssStyle="width:90%"
+						hiddenId="w_charge_person" hiddenName="crudObject.w_charge_person"
+						doubleOnclick="showPopWin('${pageContext.request.contextPath}/pages/system/search/frameselect4s.jsp?url=${pageContext.request.contextPath}/pages/system/userindex.jsp&paraname=crudObject.w_charge_person_name&paraid=crudObject.w_charge_person',600,350)"
+						doubleSrc="${pageContext.request.contextPath}/resources/images/s_search.gif"
+						doubleCssStyle="cursor:hand;border:0"
+						readonly="true"
+						display="${varMap['w_charge_personRead']}"
+						doubleDisabled="!(varMap['w_charge_personWrite']==null?true:varMap['w_charge_personWrite'])" />
+				</td>
+			</tr>
+
+			<tr>
+				<td class="ListTableTr11" nowrap>
+					<s:if test="varMap['contentRequired']">
+						<font color=red>*</font>
+					</s:if>
+					正文内容：
+				</td>
+				<td class="ListTableTr22" colspan="3">
+					<s:textarea name="crudObject.content" rows="50"
+						readonly="!(varMap['contentWrite']==null?true:varMap['contentWrite'])"
+						display="${varMap['contentRead']}"
+						cssStyle="width:100%;overflow-y:visible" title="正文内容"/>
+					<input type="hidden" id="crudObject.content.maxlength" value="3000"/>
+				</td>
+			</tr>
+			<tr>
+				<td class="ListTableTr11" nowrap>
+					<s:button 
+						disabled="!(varMap['uploadw_fileWrite']==null?true:varMap['uploadw_fileWrite'])"
+						display="${varMap['uploadw_fileRead']}" 
+						onclick="Upload('crudObject.w_file',accelerys)" value="上传附件" />
+					<s:hidden name="crudObject.w_file" />
+				</td>
+				<td class="ListTableTr22" colspan="3">
+					<div id="accelerys" align="center">
+						<s:property escape="false" value="accessoryList" />
+					</div>
+				</td>
+			</tr>
+		</table>
+		<div align="center">
+			<jsp:include flush="true" page="/pages/bpm/list_transition.jsp" />
+		</div>
+		<div align="right" style="width: 97%">
+			<input id="saveButton" type="button" value="保存" onclick="this.style.disabled='disabled';return save('planBasicInfoForm','planTable')"/>
+			<jsp:include flush="true" page="/pages/bpm/list_toBeStart.jsp" />
+			&nbsp;&nbsp;&nbsp;
+			<s:if test="${taskInstanceId!=null&&taskInstanceId>0}">
+				<input type="button" value="返回" onclick="this.style.disabled='disabled';window.location.href='${contextPath}/portal/simple/simple-firstPageAction!show.action'" />
+			</s:if>
+			<s:else>
+				<input type="button" value="返回" onclick="this.style.disabled='disabled';window.location.href='${contextPath}/plan/month/listAll.action'" />
+			</s:else>
+		</div>
+		<div align="center">
+			<jsp:include flush="true" page="/pages/bpm/list_taskinstanceinfo.jsp" />
+		</div>
+		<br/>
+	</body>
+</html>

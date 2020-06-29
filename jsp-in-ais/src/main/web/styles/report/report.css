@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+td,input,select,textarea {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12;
+}
+
+.ReportTable {
+	width: 100%;
+	border-color: #008000;
+	background-color: #339966;
+}

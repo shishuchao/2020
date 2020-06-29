@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+
+/**
+ *用于查询弹框样式
+ */
+.search_head{
+    color: #000000;
+    position: absolute;
+    bottom:45px;
+    font-size: 15px;
+    overflow-x: hidden;
+    padding: 0;
+	border: 0px;
+}
+.searchWindow{
+	overflow: hidden;
+}
+.serch_foot{
+	position: absolute;
+	border-top: 1px solid #95B8E7;
+	background-color: white;
+	bottom: 6px;
+	height: 40px;
+	z-index: 10000000;
+}
+.search_btn {
+	float: right;
+	margin-right: 20px;
+	margin-top: 8px;
+}
+.talbeStyle {
+	border-collapse: collapse; 
+	font-size: 15px;
+	width: 100%;
+	/* overflow-x:hidden;
+	overflow-y:hidden; */
+	margin-bottom: 0px;
+	padding: 5px;
+}
+/**
+ *用于跳转页面，或是重新打开页面样式（非表格，弹框类）
+ */
+.pageHeader{
+	position: absolute;
+	width: 100%;
+	height:30px;
+	z-index:10000;
+	top:1px;
+}
+.pageContent{
+	width: 100%;
+	overflow: auto;
+	margin-top:33px;
+}
+.pageIndex{
+	overflow: hidden;
+	height:100%;
+}
+
+.datagrid-row {
+  	height: 30px;
+}
+.datagrid-cell {
+	padding:5px 4px;
+}
+textarea {
+	font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, "SimSun", 宋体
+}

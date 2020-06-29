@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom:0px;
+	background-color: #C9CACB;
+}
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #47a;
+	text-decoration: none;
+}
+a:visited {
+	color: #666;
+	text-decoration: none;
+}
+a:active,a:hover {
+	color: #900;
+	text-decoration: none;
+}
+div{
+	display:block;
+	width:100%;
+	white-space:nowrap;
+	float:left;
+	white-space:nowrap;
+	overflow:hidden;
+	word-break:break-all;
+    -o-text-overflow: ellipsis;    /**//* for Opera */
+    text-overflow:ellipsis;        /**//* for IE */
+}
+div:after{
+	content:"...";
+	padding-left:3px;
+	font-size:12px;
+}
+.btn{
+	padding: 2 4 0 4;
+	font-size:12px;
+	height:23;
+	background-color:#ece9d8;
+	border-width:1;
+}
+
+.name {
+	font-family: "宋体";
+	font-size: 9pt;
+	color: #000000;
+	line-height: normal;
+}
+.input {
+	font-family: "宋体";
+	font-size: 9pt;
+	background-color:#bad0ef;
+	height: 20px;
+	width: 122px;
+}
+.line {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #666666;
+	font-family: "宋体";
+	font-size: 9pt;
+	color: #333333;
+	vertical-align: bottom;
+	text-align: left;
+	text-indent: 6px;
+	height: 25px;
+}
+.span1{
+border:#F29A10 1px solid;color:white;font-size:7px;height:8px;width:4px;background-color:#F29A10
+}

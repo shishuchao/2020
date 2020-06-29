@@ -1,0 +1,85 @@
+/*--------------------------------------------------|
+| dTree 2.05 | www.destroydrop.com/javascript/tree/ |
+|---------------------------------------------------|
+| Copyright (c) 2002-2003 Geir Landr?              |
+|--------------------------------------------------*/
+
+/*-----add by Nicholas for ctreetable-----*/
+.ctreetable {
+	font-size:15px;
+	white-space: nowrap;
+	border-left:#7CA4E9 solid 0px;
+	border-top:#7CA4E9 solid 0px;
+	border-bottom:#7CA4E9 solid 0px;
+    background-color:#ffffff;
+	
+}
+
+.ctreetable img {
+	border: 0px;
+	vertical-align: middle;
+}
+.ctreetable a:hover {
+	color: #FF0000;
+	text-decoration: underline;
+}
+.ctreetable .clip {
+	/*overflow: hidden;*/
+}
+
+
+/*-----add by Nicholas for dtree tr-------*/
+.ctreetable th {
+    padding-top:4px;
+	padding-bottom:2px;
+	font-size:12px;
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FFFFFF', endColorStr='#E3F1D1', gradientType='0');
+	border-right:#7ca4e9 solid 0px;
+	border-bottom:#7CA4E9 solid 0px;
+
+}
+.ctreetable td {
+	border-right:#7ca4e9 solid 0px;
+	border-bottom:#7CA4E9 solid 0px;
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FFFFFF', endColorStr='#E3F1D1', gradientType='0');/* wp add*/
+}
+.ctreetable tr.cttRow, .ctreetable tr.cttRowSel {
+	white-space: nowrap;
+
+
+}
+.ctreetable td.node, td.nodeSel {
+	/*font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;*/
+	font-size: 15px;
+	padding-left:8px;
+	border-right:#ffffff solid 0px;
+	border-left:none;
+	border-top:0px solid #7CA4E9;
+	border-bottom:none;
+
+
+}
+
+
+
+.ctreetable td.node {
+   filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#E3F1D1', endColorStr='#FFFFFF', gradientType='1');
+
+}
+.ctreetable tr.cttRowSel, .ctreetable td.nodeSel {
+    background-color:#FFDF7C;
+
+
+}
+
+.ctreetable .numberinput {
+	text-align:right;
+	border:1px solid #777777;
+	height:15px;
+	width:60px;
+}
+
+
+.tabletree td, .tabletree td.node{
+	border:1px solid #cccccc !important;
+}

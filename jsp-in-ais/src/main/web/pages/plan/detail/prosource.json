@@ -1,0 +1,9 @@
+[{
+  "pkey":"inner",
+  "ptext":"内部项目"
+
+},{
+  "pkey":"outter",
+  "ptext":"外部项目"
+
+}]

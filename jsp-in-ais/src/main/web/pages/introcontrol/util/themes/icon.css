@@ -1,0 +1,118 @@
+.icon-config{
+	background:url('icons/config.png') no-repeat;
+}
+
+.icon-view{
+	background:url('icons/view.png') no-repeat;
+}
+
+.icon-email{
+	background:url('icons/email.png') no-repeat;
+}
+
+.icon-go{
+	background:url('icons/go.png') no-repeat;
+}
+
+.icon-date{
+	background:url('icons/date.png') no-repeat;
+}
+
+.icon-date2{
+	background:url('icons/date2.png') no-repeat;
+}
+
+.icon-edit2{
+	background:url('icons/edit.png') no-repeat;
+}
+
+.icon-statistic{
+	background:url('icons/statistic.png') no-repeat;
+}
+
+.icon-save2{
+	background:url('icons/save2.png') no-repeat;
+}
+
+.icon-folderGo{
+	background:url('icons/folder_go.png') no-repeat;
+}
+
+.icon-folderExit{
+	background:url('icons/folderExt.png') no-repeat;
+}
+
+
+.icon-blank{
+	background:url('icons/blank.gif') no-repeat;
+}
+.icon-add{
+	background:url('icons/edit_add.png') no-repeat;
+}
+.icon-edit{
+	background:url('icons/pencil.png') no-repeat;
+}
+.icon-remove{
+	background:url('icons/edit_remove.png') no-repeat;
+}
+.icon-save{
+	background:url('icons/filesave.png') no-repeat;
+}
+.icon-cut{
+	background:url('icons/cut.png') no-repeat;
+}
+.icon-ok{
+	background:url('icons/ok.png') no-repeat;
+}
+.icon-no{
+	background:url('icons/no.png') no-repeat;
+}
+.icon-cancel{
+	background:url('icons/cancel.png') no-repeat;
+}
+.icon-reload{
+	background:url('icons/reload.png') no-repeat;
+}
+.icon-search{
+	background:url('icons/search.png') no-repeat;
+}
+.icon-print{
+	background:url('icons/print.png') no-repeat;
+}
+.icon-help{
+	background:url('icons/help.png') no-repeat;
+}
+.icon-undo{
+	background:url('icons/undo.png') no-repeat;
+}
+.icon-redo{
+	background:url('icons/redo.png') no-repeat;
+}
+.icon-back{
+	background:url('icons/back.png') no-repeat;
+}
+.icon-sum{
+	background:url('icons/sum.png') no-repeat;
+}
+.icon-tip{
+	background:url('icons/tip.png') no-repeat;
+}
+
+.icon-mini-add{
+	background:url('icons/mini_add.png') no-repeat 2px 2px;
+}
+.icon-mini-edit{
+	background:url('icons/mini_edit.png') no-repeat 2px 2px;
+}
+.icon-mini-refresh{
+	background:url('icons/mini_refresh.png') no-repeat 3px 2px;
+}
+.icon-export{
+	background:url('icons/document_export.png') no-repeat ;
+}
+.icon-empty{
+	background:url('icons/empty.png') no-repeat ;
+}
+.icon-delete{
+	background:url('icons/delete_small_16px.png') no-repeat;
+}

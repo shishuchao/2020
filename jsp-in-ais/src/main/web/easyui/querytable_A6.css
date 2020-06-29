@@ -1,0 +1,161 @@
+@CHARSET "UTF-8";
+
+.EditHead {
+	border: 1px solid #ccc;
+	text-align: right;
+	background: #f2f2f4;
+	padding: 0px 5px 0px 5px;
+
+	font-size: 15px;
+	height:30px;
+	padding-right:8px;
+
+}
+.EditHeadCenter {
+	border: 1px solid #ccc;
+	text-align: center;
+	background: #FAFAFA;
+	padding: 0px 5px 0px 5px;
+	font-weight: bold;
+	font-size: 15px;
+	height:30px;
+	padding-right:5px;
+
+}
+/*.editTd input,.editTd textarea{*/
+	/*width:80%;*/
+/*}*/
+.editTd {
+	border: 1px solid #ccc;
+	text-align: left;
+	font-size: 15px;
+	padding: 0px 5px 0px 5px;
+	height:30px;
+	padding-left:8px;
+}
+
+.Pro_EditHead {
+	border: 1px solid #ccc;
+	text-align: right;
+	background: #FAFAFA;
+	padding: 0px 5px 0px 5px;
+	font-size: 15px;
+	height:30px;
+	padding-right:5px;
+	width:20%;
+
+}
+
+.Pro_editTd {
+	border: 1px solid #ccc;
+	text-align: left;
+	font-size: 15px;
+	padding: 0px 5px 0px 5px;
+	height:30px;
+	padding-left:5px;
+	width:20%;
+}
+
+.ListTable {
+	border-collapse: collapse; 
+	/*font-size: 15px;*/
+	font: 15px 'Microsoft YaHei', 微软雅黑, 'MicrosoftJhengHei', 华文细黑, 'SimSun', 宋体;
+	width: 98%;
+	/* overflow-x:hidden;
+	overflow-y:hidden; */
+	margin-top: 10px;
+	padding: 5px;
+	align:center;
+}
+.ListTable_change {
+	border-collapse: collapse; 
+	font-size: 15px;
+	width: 98%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.topTd {
+	border: 1px solid #ccc;
+	text-align: left;
+	font-weight: normal;
+	padding: 0px 5px 0px 5px;
+	font-size: 15px;
+	height:30px;
+	padding-right:5px;
+}
+.bottomTd {
+	border: 1px solid #ccc;
+	text-align: right;
+	font-weight: normal;
+	padding: 0px 5px 0px 5px;
+	font-size: 15px;
+	height:30px;
+	padding-right:5px;
+}
+.fontSize {
+	text-align: center;
+	font-weight: normal;
+	font-size: 15px;
+}
+.titletable1 {
+	background-color: #EEF7FF;
+}
+
+.1_lan {
+	font-size: 15px;
+	height: 20px;
+	font-family: "simsun";
+	color: #007FFF
+}
+
+.ListTableTr2 {
+	BACKGROUND-COLOR: #ffffff;
+	height: 20px;
+	padding-left: 5px;
+}
+
+.icon-search {
+	background: url('/ais/pages/introcontrol/util/themes/icons/search.png')
+		no-repeat;
+}
+.icon-write {
+	background: url('/ais/pages/introcontrol/util/themes/icons/pencil.png')
+		no-repeat;
+}
+.icon-reset {
+	background: url('/ais/pages/introcontrol/util/themes/icons/tip.png')
+		no-repeat;
+}
+.noborder{
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	width:150px;
+}
+
+.hasborder{
+	border: 2px solid #9DC2FF;
+	width:150px;
+}
+.validate-noborder{
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-color: #ffa8a8;
+	background-color: #fff3f3;
+	color: #000;
+	width:150px;
+}
+select{
+	width:150px;
+	font-size:15px;
+	font-family: "宋体";
+}
+textarea{
+	font-size:15px;
+}
+input{
+	font-size:15px;
+	font-family: "宋体";
+}

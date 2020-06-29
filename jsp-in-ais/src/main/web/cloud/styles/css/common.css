@@ -1,0 +1,107 @@
+.ext-ie8 .x-menu-item-icon, 
+.ext-ie7 .x-menu-item-icon, 
+.ext-ie6 .x-menu-item-icon {left: -24px;} 
+/*add vertical line to grid*/
+.x-grid3-row td, .x-grid3-summary-row td{
+	border-right: 1px solid #ecefe6;
+	border-bottom: 1px solid #ecefe6;
+}
+ /*增加list的radio选择框 begin,by Pei,@2010-04-11*/
+.x-grid3-row-radio,.x-grid3-hd-radio{width:100%;height:18px;background-position:2px 2px;background-repeat:no-repeat;background-color:transparent;background-image:url(../../images/row-radio-sprite.gif);}
+.x-grid3-row .x-grid3-row-radio { background-position:2px 2px;}
+.x-grid3-row-selected .x-grid3-row-radio, .x-grid3-hd-checker-on .x-grid3-hd-radio { background-position:-23px 2px;}
+.x-grid3-hd-radio {  background-position:2px 3px;}
+.x-grid3-hd-checker-on .x-grid3-hd-radio { background-position:-23px 3px;}
+/*增加list的radio选择框 end,by Pei,@2010-04-11*/
+.x-grid3-row-over td
+{
+	border-right: 1px solid #dcdfd6;
+	border-bottom: 1px solid #dcdfd6;
+}
+.x-grid3-row {
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	
+}
+.x-form-trigger-query {
+	width:17px;height:21px;border:0;
+	background-image:url(../../images/lookup.gif) !important;
+	cursor:pointer;border-bottom:1px solid #B5B8C8;position:absolute;top:0;}
+.x-grid3-row-radioBtn {
+	background-image:url(../../images/row-radio-sprite.gif) !important;
+	}
+.usp-content{
+height:100%;
+overflow-y:scroll;
+}
+.usp-status-text{
+	}
+.usp-status-info{
+	color:red;
+	}
+/*图片去色*/
+.usp-img-gray{filter:Gray}
+.usp-img{}
+.tbtn{
+background-color:#DFE8F6;
+}
+
+.nav1 {
+    background-image:url(../extjs/resources/images/default/ex/cog_edit.png) !important;
+}
+.nav2 {
+    background-image:url(../extjs/resources/images/default/ex/application_go.png) !important;
+}
+.nav3 {
+    background-image:url(../extjs/resources/images/default/ex/folder_wrench.png) !important;
+}
+.leaf-icon {      
+    background-image:url(../extjs/resources/images/default/ex/leaf.gif) !important;      
+}
+
+
+
+.x-table-layout-view {
+	border-top:1px solid #d8d8e0;
+	border-left:1px solid #d8d8e0;
+}
+.x-table-layout td {vertical-align:top;}
+.x-form-label-view {
+	border-right:1px solid #d8d8e0;
+	border-bottom:1px solid #d8d8e0;
+	padding: 5px 5px 0px 5px;
+	width:200;
+	text-align:right;
+}
+.x-form-label-view-label {
+	border-right:1px solid #d8d8e0;
+	border-bottom:2px solid #a8a8b0;
+	padding: 5px 5px 0px 5px;
+}
+.x-form-label-view-label-item {
+	font-weight: bold;
+}
+.x-form-item-view {
+	background-color:#f8f8f8;
+	border-right:1px solid #d8d8e0;
+	border-bottom:1px solid #d8d8e0;
+	padding: 5px 5px 0px 5px;
+}
+.x-form-item-edit {
+	background-color:#f8f8f8;
+	border-right:1px solid #d8d8e0;
+	border-bottom:1px solid #d8d8e0;
+	padding: 2px 5px 0px 5px;
+	width:40%;
+}
+.x-form-item-view-noborder {
+	background-color:#f8f8f8;
+	padding: 5px 5px 0px 5px;
+}
+.x-form-label-view-noborder {
+	padding: 5px 5px 0px 5px;
+}
+.x-form-item-edit-noborder {
+	/*background-color:#f8f8f8;*/
+	padding: 2px 5px 0px 5px;
+}

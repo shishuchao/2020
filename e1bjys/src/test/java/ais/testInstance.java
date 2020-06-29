@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * @auchor 19381
  */
-class testInstance {
+public class testInstance {
 
      WebDriver driver;
 
@@ -36,7 +36,14 @@ class testInstance {
             driver.get("E:\\IDEA2\\ais\\web\\pages\\plan\\month\\edit_workplan - 副本.jsp");
             Thread.sleep(500);
 
-
+            WebElement element = driver.findElement(By.name("All"));
+            List<WebElement> childElements = element.findElements(By.xpath("div"));
+            for(WebElement childElement : childElements){
+                System.out.println(childElement.getAttribute("class")+" "+childElement.getText());
+            }
+            System.out.println(element.getText());
+            WebElement parentElement = element.findElement(By.xpath(".."));
+            System.out.println(parentElement.getAttribute("id"));
 
         } catch (InterruptedException e) {
             e.printStackTrace();

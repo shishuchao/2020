@@ -1,0 +1,294 @@
+<!--
+<style>
+.duallist {behavior: url(/HtmlControls/DualList.htc)}
+</style>
+<div id="mylist" class="duallist">
+<left text="a" value="1"></left>
+<right text="b" value="0"></right>
+</div>
+-->
+<PUBLIC:COMPONENT>
+<PUBLIC:PROPERTY name="BoxWidth" value="120"/>
+<PUBLIC:PROPERTY name="BoxHeight" value="150"/>
+<PUBLIC:PROPERTY name="Context" value="/ais"/>
+<PUBLIC:EVENT ID="ochange" name="Onchange" />
+<PUBLIC:METHOD name="getResult" />
+<PUBLIC:ATTACH EVENT="ondocumentready" ONEVENT="init();" />
+<SCRIPT>
+
+
+function init()
+{      setupStyles();
+       var table=document.createElement("TABLE");
+       var array=new Array();
+       table.insertRow();
+        table.insertRow();
+       var row=table.rows(0);
+       row.insertCell();
+       row.insertCell();
+       row.insertCell();
+        table.rows(1).insertCell();
+        table.rows(1).insertCell();
+        table.rows(1).insertCell();
+//add head
+
+  var leftrole=document.createElement("font");
+  leftrole.innerHTML="\u672a\u6388\u4e88\u89d2\u8272";
+  table.rows(0).cells(0).appendChild(leftrole);
+   var rightrole=document.createElement("font");
+  rightrole.innerHTML="\u5df2\u6388\u4e88\u89d2\u8272";
+  table.rows(0).cells(2).appendChild(rightrole);
+
+
+//
+       
+       var leftddl=document.createElement("SELECT");
+       leftddl.size="4";
+       leftddl.multiple="multiple";
+       leftddl.id=element.id+"_left";
+       leftddl.className="style" + element.id;
+       leftddl.runtimeStyle.width=BoxWidth;
+       leftddl.runtimeStyle.height=BoxHeight;
+       leftddl.selectedIndex=-1;
+       var rightddl=document.createElement("SELECT");
+       rightddl.size="4";
+       rightddl.multiple="multiple";
+       rightddl.id=element.id+"_right";
+       rightddl.className="style" + element.id;
+
+       rightddl.runtimeStyle.width=BoxWidth;
+       rightddl.runtimeStyle.height=BoxHeight;
+       rightddl.selectedIndex=-1;
+       for (var i=0;i<element.children.length;i++)
+       {
+           var tagname=element.children[i].tagName.toLowerCase();
+	   var child=element.children[i];
+           if (tagname=="right")//right'sdropdownlist arg
+	   {
+              array[i]=child.value;
+	   }
+       }
+
+       for (var i=0;i<element.children.length;i++)
+       {
+          var tagname=element.children[i].tagName.toLowerCase();
+          var option=document.createElement("option");
+	  var child=element.children[i];
+
+	  option.value=child.value;
+	  option.title=child.text;
+	  option.innerText=child.text;
+	  
+	  if (tagname=="left")//left's dropdownlist arg
+	  {
+	    var canadd=true;
+	    for (var j=0;j<array.length;j++)
+	    {
+	       if (child.value==array[j])
+	       {
+		  canadd=false;
+		  break;
+	       }
+	    }
+	    if (canadd)
+	    leftddl.appendChild(option);
+	  }
+
+	  if (tagname=="right")//right's dropdownlist arg
+	  {
+	    rightddl.appendChild(option);
+	  }
+       }
+
+       table.rows(1).cells(0).appendChild(leftddl);
+       table.rows(1).cells(1).appendChild(CreateCenter());
+      
+       table.rows(1).cells(2).appendChild(rightddl);
+   
+       element.innerHTML="";
+       element.appendChild(table);
+      
+      
+
+}
+
+function CreateCenter()
+{
+  var table=document.createElement("TABLE");
+  table.insertRow();
+  table.insertRow();
+  table.insertRow();
+  table.rows(0).insertCell();
+  table.rows(1).insertCell();
+  table.rows(1).cells(0).runtimeStyle.height="30px";
+
+  table.rows(2).insertCell();
+
+  table.rows(0).cells(0).appendChild(CreateAddbutton());
+  table.rows(2).cells(0).appendChild(CreateDelbutton());
+  return table;
+}
+
+function CreateAddbutton()
+{
+  var button=document.createElement("img");
+  button.src=Context+"/images/goright.gif";
+  button.runtimeStyle.cursor="hand";
+  button.attachEvent("onclick",MoveRight);
+  return button;
+}
+
+function CreateDelbutton()
+{
+  var button=document.createElement("img");
+  button.src=Context+"/images/goleft.gif";
+  button.runtimeStyle.cursor="hand";
+  button.attachEvent("onclick",MoveLeft);
+  return button;
+}
+
+function MoveRight()
+{
+   var table=GetTable();
+   var leftddl=table.rows(1).cells(0).children[0];
+   var rightddl=table.rows(1).cells(2).children[0];
+   Move(leftddl,rightddl);
+}
+
+function MoveLeft()
+{
+   var table=GetTable();
+   var leftddl=table.rows(1).cells(0).children[0];
+   var rightddl=table.rows(1).cells(2).children[0];
+   Move(rightddl,leftddl);
+}
+
+function GetTable()
+{
+  for (var i=0;i<element.children.length;i++)
+  {
+    if (element.children[i].tagName.toLowerCase()=="table")
+    {
+      return element.children[i];    
+    }
+  
+  }
+
+}
+
+function getResult()
+{
+   var table=GetTable();
+   var obj1=table.rows(1).cells(0).children[0];
+   var obj2=table.rows(1).cells(2).children[0];
+
+   var lefttexts="";
+   var leftvalues="";
+   var righttexts="";
+   var rightvalues="";
+
+   for (var i=0;i<obj1.length;i++)
+   {
+      var tmp=obj1.options[i];
+      lefttexts+=tmp.text;
+      leftvalues+=tmp.value;
+      if (i!=obj1.length-1)
+      {
+        lefttexts+=",";
+        leftvalues+=",";
+      }
+   }
+
+   for (var i=0;i<obj2.length;i++)
+   {
+      var tmp=obj2.options[i];
+      righttexts+=tmp.text;
+      rightvalues+=tmp.value;
+      if (i!=obj2.length-1)
+      {
+        righttexts+=",";
+        rightvalues+=",";
+      }
+   }
+
+   var e=createEventObject();
+   e.lefttext=lefttexts;
+   e.leftvalue=leftvalues;
+   e.righttext=righttexts;
+   e.rightvalue=rightvalues;
+   
+   ochange.fire(e);
+   return rightvalues;
+}
+
+function Move(obj1,obj2)
+{
+        var temp1 = new Array();
+	var temp2 = new Array();
+	var tempa = new Array();
+	var tempb = new Array();
+	var tempa2 = new Array();
+	var tempb2 = new Array();
+	var current1 = 0;
+	var current2 = 0;
+	var y=0;
+	var attribute;
+
+     
+        for (var i = 0; i < obj2.length; i++)
+	{  
+		y=current1++
+		temp1[y] = obj2.options[i].value;
+		tempa[y] = obj2.options[i].text;
+		tempa2[y] = obj2.options[i].title;
+	}
+
+	for (var i = 0; i < obj1.length; i++)
+	{   
+		if ( obj1.options[i].selected )
+		{  
+			y=current1++
+			temp1[y] = obj1.options[i].value;
+			tempa[y] = obj1.options[i].text;
+			tempa2[y] = obj1.options[i].title;
+		}
+		else
+		{  
+			y=current2++
+			temp2[y] = obj1.options[i].value; 
+			tempb[y] = obj1.options[i].text;
+			tempb2[y] = obj1.options[i].title;
+		}
+	}
+
+	//generating new options 
+	for (var i = 0; i < temp1.length; i++)
+	{  
+		obj2.options[i] = new Option();
+		obj2.options[i].value = temp1[i];
+		obj2.options[i].text =  tempa[i];
+		obj2.options[i].title =  tempa2[i];
+	}
+
+	//generating new options
+	obj1.length=0;
+	if (temp2.length>0)
+	{	
+		for (var i = 0; i < temp2.length; i++)
+		{   
+			obj1.options[i] = new Option();
+			obj1.options[i].value = temp2[i];
+			obj1.options[i].text =  tempb[i];
+			obj1.options[i].title =  tempb2[i];
+		}
+	}
+	getResult();
+}
+
+function setupStyles() {
+   var oSheet = window.document.createStyleSheet();
+   oSheet.addRule(".style" + element.id,"BORDER-RIGHT: #7F9DB9 1px solid; BORDER-TOP: #7F9DB9 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #7F9DB9 1px solid;  COLOR: #000000; BORDER-BOTTOM: #7F9DB9 1px solid;");
+}
+
+</SCRIPT>
+</PUBLIC:COMPONENT>

@@ -1,0 +1,498 @@
+body {
+  font-family: '微软雅黑';
+  margin: 0 auto;
+  min-width: 980px;
+}
+ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*background*/
+#mainBody {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.cloud {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: url(../../resources/images/login/cloud.png) no-repeat;
+  z-index: 1;
+  opacity: 0.5;
+}
+#cloud2 {
+  z-index: 2;
+}
+.loginbody {
+  background: url(../../resources/images/login/loginbg3.png) no-repeat center center;
+  width: 100%;
+  height: 585px;
+  overflow: hidden;
+  position: absolute;
+  top: 47px;
+}
+.systemlogo {
+  /*background: url(../images/login/loginlogo.png) no-repeat center;*/
+  width: 100%;
+  /*height: 71px;*/
+  height: 40px;
+  /* margin-top: 75px;*/
+  margin-top: 45px;
+}
+/*login????*/
+/*header*/
+.logintop {
+  height: 47px;
+  position: absolute;
+  top: 0;
+  background: url(../../resources/images/login/loginbg1.png) repeat-x;
+  z-index: 100;
+  width: 100%;
+}
+.logintop span {
+  color: #fff;
+  line-height: 47px;
+  background: url(../../resources/images/login/loginsj.png) no-repeat 21px 18px;
+  text-indent: 44px;
+  /*color: #afc5d2;*/
+  float: left;
+  font-size: 16px;
+}
+.logintop ul {
+  float: right;
+  padding-right: 30px;
+}
+.logintop ul li {
+  float: left;
+  margin-left: 20px;
+  line-height: 47px;
+}
+.logintop ul li a {
+  color: #afc5d2;
+}
+.logintop ul li a:hover {
+  color: #fff;
+}
+/*container*/
+.loginbox {
+  position: absolute;
+  width: 692px;
+  height: 373px;
+  background: url(../../resources/images/login/logininfo.png) no-repeat;
+  left: 50%;
+  margin-left: -346px;
+}
+.loginbox ul {
+  margin-top: 80px;
+  margin-left: 285px;
+}
+.loginbox ul li {
+  margin-bottom: 25px;
+}
+.loginbox ul li .loginuser {
+  background: url(../../resources/images/login/loginuser.png) no-repeat;
+  font-weight: bold;
+  width: 345px;
+  height: 48px;
+  border: none;
+  line-height: 48px;
+  padding-left: 44px;
+  font-size: 14px;
+}
+.loginbox ul li .loginpwd {
+  background: url(../../resources/images/login/loginpassword.png) no-repeat;
+  color: #90a2bc;
+  width: 345px;
+  height: 48px;
+  border: none;
+  line-height: 48px;
+  padding-left: 44px;
+  font-size: 14px;
+}
+.loginbox ul li .loginbtn {
+  width: 111px;
+  height: 35px;
+  background: url(../../resources/images/login/buttonbg.png) repeat-x;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  line-height: 35px;
+  border: none;
+}
+
+
+/*container*/
+.loginlist {
+  width: 625px;
+  overflow: hidden;
+  margin-top: 35px;
+}
+.loginlist li {
+  float: left;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.loginlist li span {
+  display: block;
+  width: 150px;
+  height: 200px;
+  background: url(../../resources/images/login/lbg.png) no-repeat;
+  -webkit-background-size: 150px 200px;
+  background-size: 150px 200px;
+  text-align: center;
+  padding-top: 25px;
+  cursor: pointer;
+}
+
+.loginlist li span img{
+  width: 100px;
+  height: 100px;
+}
+.loginlist li span p{
+  font-size: 1.3em;
+  color: #ffffff;
+}
+.loginlist li span:hover {
+  background: url(../../resources/images/login/lbg1.png) no-repeat;
+  -webkit-background-size: 150px 200px;
+  background-size: 150px 200px;
+}
+.loginlist li a {
+  display: block;
+  width: 150px;
+  height: 200px;
+  background: url(../../resources/images/login/lbg.png) no-repeat;
+  -webkit-background-size: 150px 200px;
+  background-size: 150px 200px;
+  text-align: center;
+  padding-top: 25px;
+  cursor: pointer;
+}
+.loginlist li a:hover {
+  background: url(../../resources/images/login/lbg1.png) no-repeat;
+  -webkit-background-size: 150px 200px;
+  background-size: 150px 200px;
+}
+/*footer*/
+.loginbm {
+  height: 70px;
+  line-height: 30px;
+  text-align: center;
+  background: url(../../resources/images/login/loginbg2.png) repeat;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #0b3a58;
+}
+.sysname{
+  background: url("../../resources/images/login/sysname.png") no-repeat;
+}
+
+
+.login_button_div {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/********************定义JS所需静态常量   start *********************/
+.login_button_div_BUTTON_LEFT_WIDTH{
+  height: 0px;
+  line-height:0px;
+}
+.login_button_div_BUTTON_RIGHT_WIDTH{
+  height: 0px;
+  line-height:0px;
+}
+.login_button_div_BUTTON_HEIGHT
+{
+  height:25px;
+}
+.login_button_div_BUTTON_LEFT_WIDTH
+{
+  height:0px;
+}
+.login_button_div_BUTTON_RIGHT_WIDTH
+{
+  height:0px;
+}
+/********************定义JS所需静态常量   end ***********************/
+
+.login_button_div .btn_center {
+  height:36px;
+}
+
+.login_button_div .btn_left_disabled {
+  float: left;
+  height:22px;
+  width: 0px;
+}
+
+.login_button_div .btn_right_off {
+  float: right;
+  height:22px;
+  width: 0px;
+}
+.login_button_div .btn_right_on {
+  float: right;
+  height:22px;
+
+}
+.login_button_div .btn_right_disabled {
+  float: right;
+  height:22px;
+  width: 0px;
+}
+
+.login_button_div .btn_off {
+  border-style:none;
+  background-image: url(../../resources/images/login-1.png);
+  border: 0px;
+  height:36px;
+  font-size: 12px;
+  color: #FFF;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+.login_button_div .btn_on {
+  border-style:none;
+  background-image: url(../../resources/images/login.png);
+  border: 0px;
+  height:36px;
+  font-size: 12px;
+  color: #FFF;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+.login_button_div .btn_down {
+  border-style:none;
+  background-image: url(../../resources/images/login_press.png);
+  border: 0px;
+  height:36px;
+  font-size: 12px;
+  color: #FFF;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+.login_button_div .btn_disabled {
+  border-style:none;
+  height:25px;
+  padding-right: 2px;
+  padding-left: 2px;
+  cursor: pointer;
+  padding-top: 0px;
+}
+.text_div {
+  background-color:#FFFFFF;
+  height:21px;
+  border-top:1px solid #7198B5;
+  border-left:1px solid #7198B5;
+  border-bottom:1px solid #C2D0D9;
+  border-right:1px solid #C2D0D9;
+}
+
+.label_div{
+  z-index:99999;
+}
+.inputc{
+
+}
+.inputc .ipt_l{
+  width:11px;
+  height:55px;
+}
+.inputc .ipt_m{
+  background:url("../../resources/images/login/input_normal.png");
+  height:42px;
+  width:227px;
+  margin-left:3px;
+  margin-top:4px;
+  margin-right:3px;
+}
+.inputc .ipt_m1{
+  height:48px;
+  width:233px;
+  padding-top:1px;
+}
+.inputc .ipt_m1_code{
+  height:48px;
+  width:201px;
+  padding-top:1px;
+}
+/****/
+.inputc .ipt_r{
+  width:11px;
+  height:55px;
+}
+.inputc input{
+  border:none;
+  height:23px;
+}
+.inputc .label{
+  color:#acb6c8;
+  font-size:14px;
+  font-family:微软雅黑;
+}
+.text_div{
+  border:none;
+  background-image:url("../../resources/images/login/ipt_input_bg.png");
+  float:left;
+}
+.text_div .text_input{
+  height:22px;
+  width: 1px;
+  background:none;
+  float:left;
+}
+.inputf{
+
+}
+.inputf .label{
+  color:#acb6c8;
+  font-size:14px;
+  font-family:微软雅黑;
+}
+.inputf input{
+  border:none;
+}
+.inputf .ipt_l{
+  background:url("../../resources/images/login/ipt_f_l.png");
+}
+.inputf .ipt_m1{
+  background:url("../../resources/images/login/input_higlight.png") no-repeat;
+  height:48px;
+  width:233px;
+  padding-top:1px;
+}
+.inputf .ipt_m{
+  background:url("../../resources/images/login/input_normal.png") no-repeat;
+  height:42px;
+  width:227px;
+  margin-left:3px;
+  margin-top:4px;
+  margin-right:3px;
+}
+
+.login_button_div .btn_off {
+  border-style:none;
+  background: url(../../resources/images/login/login-1.png) no-repeat;
+  /**_background-image :none;
+   _FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/login-1.png);
+   **/
+  border: 0px;
+  height:36px;
+  font-family:微软雅黑;
+  font-size: 13px;
+  color: #492500;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+.login_button_div .btn_on {
+  border-style:none;
+  background: url(../../resources/images/login/login.png) no-repeat;
+  /**
+  _background-image :none;
+  _FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/login.png);
+  **/
+  border: 0px;
+  height:36px;
+  font-family:微软雅黑;
+  font-size: 13px;
+  color: #492500;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+.login_button_div .btn_down {
+  border-style:none;
+  background: url(../../resources/images/login/login_press.png) no-repeat;
+  /**
+      _background-image :none;
+      _FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/login_press.png);
+  **/
+  border: 0px;
+  height:36px;
+  font-family:微软雅黑;
+  font-size: 13px;
+  color: #492500;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+.login_button_div .btn_loading {
+  border-style:none;
+  background: url(../../resources/images/login/login_loading.gif) no-repeat;
+  /**_background-image :none;
+   _FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/login_loading.gif);
+   **/
+  border: 0px;
+  height:36px;
+  font-family:微软雅黑;
+  font-size: 13px;
+  color: #492500;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+.text_div .input_normal_left_bg{
+  display:none;
+}
+.text_div .input_normal_right_bg{
+  display:none;
+}
+.text_div .input_normal_center_div_bg{
+  background:none;
+}
+.text_div .input_normal_center_bg{
+  font-size:14px;
+}
+.text_div .input_highlight_left_bg{
+  display:none;
+}
+.text_div .input_highlight_right_bg{
+  display:none;
+}
+.text_div .input_highlight_center_div_bg{
+  background:none;
+}
+.text_div .input_highlight_center_bg{
+  font-size:14px;
+}
+#multiLanguageCombo_textdiv{
+  background:  transparent;
+}
+#multiLanguageCombo_textdiv .input_normal_center_div_bg .text_input{
+  color: #FFFFFF;
+  font-family: 微软雅黑;
+  font-size: 12px;
+  background:  transparent;
+}
+
+#multiLanguageCombo_textdiv  .input_highlight_center_div_bg .text_input{
+  color: #FFFFFF;
+  font-family: 微软雅黑;
+  font-size: 12px;
+}
+
+.inputpanel{
+  background:url('../../resources/images/login/panel.png') no-repeat;
+}
+.inputpanel1{
+  background:url('../../resources/images/login/panel1.png') no-repeat;
+}
