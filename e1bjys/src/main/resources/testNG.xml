@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite" parallel="false">
-	<parameter name ="user" value="13283155237"/>
-	<parameter name ="pass" value="QWER_1234"/>
-  <test name="Test1">
-<!--	<listeners>
-        <listener class-name="com.mushishi.selenium.util.RetryListener" />
-        <listener class-name="com.mushishi.selenium.util.TestNGListenerScreen" />
-    </listeners>-->
-    <classes>
-      <!--<class name="com.mushishi.selenium.testCase.SuiteTestLogin"/>
-      <class name="com.mushishi.selenium.testCase.SuiteTestBuy"/>-->
-        <class name="ssc.testCase.Login"/>
-    </classes>
-  </test>
+
+    <parameter name ="user" value="13283155237"/>
+    <parameter name ="pass" value="QWER_1234"/>
+<!--    <parameter name ="username" value="shiscsj"/>-->
+<!--    <parameter name ="password" value="123"/>-->
+    <listeners>
+        <listener class-name="ais.AisListener"></listener>
+    </listeners>
+    <!--	<listeners>
+            <listener class-name="com.mushishi.selenium.util.RetryListener" />
+            <listener class-name="com.mushishi.selenium.util.TestNGListenerScreen" />
+        </listeners>-->
+    <test name="Test1">
+
+        <classes>
+    <!--        <class name="ssc.testCase.Login"/>-->
+            <class name="ais.ActionSelenium">
+                <parameter name ="username" value="shiscsj"/>
+                <parameter name ="password" value="123"/>
+                <methods>
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
 </suite>

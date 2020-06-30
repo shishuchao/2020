@@ -8,6 +8,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.awt.*;
@@ -24,20 +25,22 @@ public class ActionSelenium {
     static Logger logger = Logger.getLogger(ActionSelenium.class);
     SSCUtils utils ;
 
-
     @BeforeClass
     public void testInit(){
         System.setProperty("webdriver.ie.driver","E:\\IEDriverServer.exe");
         driver = new InternetExplorerDriver() ;
     }
+
     @Test
-    public void testLogin() {
+    @Parameters({"username","password"})
+    public void testLogin(String username,String password) {
         try {
             driver.get("http://10.2.112.21:30302/ais/login/loginView.jsp");
             Thread.sleep(2000);
-            driver.findElement(By.id("j_username")).sendKeys("shiscsj");
-            driver.findElement(By.id("j_password")).sendKeys("123");
-
+//            driver.findElement(By.id("j_username")).sendKeys("shiscsj");
+            driver.findElement(By.id("j_username")).sendKeys(username);
+//            driver.findElement(By.id("j_password")).sendKeys("123");
+            driver.findElement(By.id("j_password")).sendKeys(password);
             utils = new SSCUtils(driver);
             utils.screenShot("testLogin");
             // ---- ----
@@ -255,7 +258,7 @@ public class ActionSelenium {
 //            JavascriptExecutor jsExecutor = (JavascriptExecutor)driver;
 //            jsExecutor.executeScript(js);
             List<WebElement> divs = driver.findElements(By.className("datebox-button"));
-            SSCUtils utils = new SSCUtils(driver);
+            utils = new SSCUtils(driver);
 
             // 项目开始时间
             System.out.println("    几个时间");
@@ -436,7 +439,6 @@ public class ActionSelenium {
         }
 
     }
-
     @AfterClass
     public void testClose(){
         try {
@@ -446,7 +448,7 @@ public class ActionSelenium {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
     }
+
 
 }

@@ -44,7 +44,7 @@ public class SSCUtils {
      */
     public void screenShot(String fileName) throws IOException {
         // 通过TakesScreenshot创建File实例
-        File screenshot = ((TakesScreenshot) this.driver).getScreenshotAs(OutputType.FILE);
+        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         // 创建路径：时间+方法名
         Date date = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
